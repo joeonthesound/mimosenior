@@ -1,0 +1,14 @@
+{
+  "name": "mimo-senior-static-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bilingual, prerendered website for Mimo Senior using native Node.js, HTML, CSS and Vanilla JavaScript.",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "python -m http.server 8080 -d dist"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

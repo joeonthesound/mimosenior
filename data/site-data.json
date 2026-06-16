@@ -1,0 +1,2491 @@
+{
+  "settings": {
+    "siteName": "Mimo Senior",
+    "defaultLanguage": "es",
+    "languages": [
+      "es",
+      "en"
+    ],
+    "siteUrl": "https://mimosenior.example",
+    "themeDefault": "light",
+    "country": "Panamá",
+    "countryCode": "PA",
+    "buildDate": "2026-06-16",
+    "analytics": {
+      "enabled": false,
+      "dataLayerName": "dataLayer"
+    },
+    "features": {
+      "monthlyPlan": true,
+      "institutional": true,
+      "calculator": true
+    }
+  },
+  "business": {
+    "name": "Mimo Senior",
+    "foundedYear": 2018,
+    "country": "Panamá",
+    "serviceArea": "Panamá",
+    "whatsapp": {
+      "display": "+507 6200-2765",
+      "number": "50762002765"
+    },
+    "email": "",
+    "address": "",
+    "hours": {},
+    "social": {}
+  },
+  "assets": {
+    "images": {
+      "homeHero": "img/img.png",
+      "homeNeeds": "img/img1.png",
+      "diapersHero": "img/img2.png",
+      "productsHero": "img/img3.png",
+      "guideHero": "img/img4.png",
+      "monthlyPlanHero": "img/img5.png",
+      "institutionsHero": "img/img6.png",
+      "aboutHero": "img/img7.png",
+      "familyCare": "img/img8.png",
+      "caregiverSupport": "img/img9.png",
+      "bedProtection": "img/img10.png",
+      "contactSupport": "img/img11.png",
+      "ogDefault": "img/img12.png",
+      "favicon": "img/favicon.svg"
+    }
+  },
+  "routes": {
+    "home": {
+      "es": "/",
+      "en": "/en/"
+    },
+    "diapers": {
+      "es": "/panales-para-adultos-panama/",
+      "en": "/en/adult-diapers-panama/"
+    },
+    "products": {
+      "es": "/productos-cuidado-adulto-mayor/",
+      "en": "/en/senior-care-products/"
+    },
+    "guide": {
+      "es": "/ayuda-elegir-panal-adulto/",
+      "en": "/en/help-choose-adult-diaper/"
+    },
+    "monthly": {
+      "es": "/plan-mensual-insumos-adulto-mayor/",
+      "en": "/en/monthly-senior-care-supplies/"
+    },
+    "institutions": {
+      "es": "/panales-insumos-geriatricos-panama/",
+      "en": "/en/supplies-care-homes-panama/"
+    },
+    "about": {
+      "es": "/nosotros/",
+      "en": "/en/about-us/"
+    },
+    "faq": {
+      "es": "/preguntas-frecuentes/",
+      "en": "/en/frequently-asked-questions/"
+    },
+    "contact": {
+      "es": "/contacto/",
+      "en": "/en/contact/"
+    },
+    "privacy": {
+      "es": "/politica-de-privacidad/",
+      "en": "/en/privacy-policy/"
+    }
+  },
+  "navigation": {
+    "order": [
+      "home",
+      "diapers",
+      "products",
+      "monthly",
+      "institutions",
+      "guide",
+      "about",
+      "faq",
+      "contact"
+    ],
+    "labels": {
+      "es": {
+        "home": "Inicio",
+        "diapers": "Pañales para adultos",
+        "products": "Productos",
+        "monthly": "Plan mensual",
+        "institutions": "Geriátricos",
+        "guide": "Guía para elegir",
+        "about": "Nosotros",
+        "faq": "Preguntas frecuentes",
+        "contact": "Contacto",
+        "privacy": "Política de privacidad"
+      },
+      "en": {
+        "home": "Home",
+        "diapers": "Adult diapers",
+        "products": "Products",
+        "monthly": "Monthly planning",
+        "institutions": "Care facilities",
+        "guide": "Choosing guide",
+        "about": "About us",
+        "faq": "FAQ",
+        "contact": "Contact",
+        "privacy": "Privacy policy"
+      }
+    }
+  },
+  "seo": {
+    "es": {
+      "home": {
+        "title": "Mimo Senior | Insumos para el cuidado del adulto mayor",
+        "description": "Pañales para adultos, protectores, guantes y otros insumos con orientación personalizada y cotización por WhatsApp en Panamá."
+      },
+      "diapers": {
+        "title": "Pañales para adultos en Panamá | Guía y cotización",
+        "description": "Compara pañales con adhesivos y pants, revisa tallas y calcula consumo orientativo. Solicita ayuda y cotización por WhatsApp."
+      },
+      "products": {
+        "title": "Productos para el cuidado del adulto mayor | Mimo Senior",
+        "description": "Conoce categorías de pañales, protectores de cama, guantes, toallitas y productos de higiene disponibles para cotizar."
+      },
+      "guide": {
+        "title": "Ayuda para elegir pañal para adulto | Mimo Senior",
+        "description": "Asistente orientativo para organizar movilidad, talla, consumo y zona de entrega antes de solicitar una cotización."
+      },
+      "monthly": {
+        "title": "Plan mensual de insumos para adulto mayor | Mimo Senior",
+        "description": "Organiza cantidades, talla y productos complementarios para compras recurrentes flexibles, sin suscripción automática."
+      },
+      "institutions": {
+        "title": "Pañales e insumos para geriátricos en Panamá | Mimo Senior",
+        "description": "Solicita cotizaciones institucionales con varias tallas, consumo mensual, productos y frecuencia de entrega."
+      },
+      "about": {
+        "title": "Quiénes somos | Mimo Senior Panamá",
+        "description": "Conoce cómo Mimo Senior acompaña desde 2018 a familias, cuidadores y centros con orientación para organizar insumos."
+      },
+      "faq": {
+        "title": "Preguntas frecuentes | Mimo Senior",
+        "description": "Respuestas sobre pañales para adultos, tallas, consumo, entregas, compras mensuales y cotizaciones para geriátricos."
+      },
+      "contact": {
+        "title": "Contacto por WhatsApp | Mimo Senior",
+        "description": "Solicita orientación o una cotización de insumos para el cuidado del adulto mayor mediante WhatsApp."
+      },
+      "privacy": {
+        "title": "Política de privacidad | Mimo Senior",
+        "description": "Consulta cómo los formularios preparan mensajes para WhatsApp y cómo se utilizan el almacenamiento local y los datos ingresados."
+      }
+    },
+    "en": {
+      "home": {
+        "title": "Mimo Senior | Everyday senior care supplies",
+        "description": "Adult diapers, underpads, gloves and other supplies with personal guidance and WhatsApp quotations in Panama."
+      },
+      "diapers": {
+        "title": "Adult diapers in Panama | Sizing guide and quotes",
+        "description": "Compare tab-style and pull-up diapers, review sizing and estimate usage before requesting a WhatsApp quote."
+      },
+      "products": {
+        "title": "Senior care products | Mimo Senior",
+        "description": "Explore adult diapers, underpads, gloves, wipes and hygiene supply categories available for quotation."
+      },
+      "guide": {
+        "title": "Help choosing an adult diaper | Mimo Senior",
+        "description": "An informational assistant for organising mobility, size, usage and delivery details before requesting a quote."
+      },
+      "monthly": {
+        "title": "Monthly senior care supply planning | Mimo Senior",
+        "description": "Organise quantities, sizes and complementary supplies for flexible recurring purchases without an automatic subscription."
+      },
+      "institutions": {
+        "title": "Adult diapers and supplies for care homes in Panama",
+        "description": "Request an institutional quotation with multiple sizes, monthly usage, products and delivery frequency."
+      },
+      "about": {
+        "title": "About Mimo Senior | Panama",
+        "description": "Learn how Mimo Senior has supported families, caregivers and care facilities with senior care supplies since 2018."
+      },
+      "faq": {
+        "title": "Frequently asked questions | Mimo Senior",
+        "description": "Answers about adult diapers, sizing, usage, delivery, monthly planning and quotations for care facilities."
+      },
+      "contact": {
+        "title": "Contact Mimo Senior on WhatsApp",
+        "description": "Request guidance or a quote for everyday senior care supplies through WhatsApp."
+      },
+      "privacy": {
+        "title": "Privacy policy | Mimo Senior",
+        "description": "Learn how forms prepare WhatsApp messages and how local storage and entered information are handled."
+      }
+    }
+  },
+  "schemas": {
+    "organizationType": "LocalBusiness",
+    "businessCategory": "Senior care supply store"
+  },
+  "content": {
+    "es": {
+      "global": {
+        "skip": "Saltar al contenido",
+        "menu": "Menú",
+        "closeMenu": "Cerrar menú",
+        "language": "English",
+        "themeLight": "Usar tema claro",
+        "themeDark": "Usar tema oscuro",
+        "breadcrumbs": "Migas de pan",
+        "home": "Inicio",
+        "readMore": "Ver más",
+        "quote": "Cotizar",
+        "availability": "Disponibilidad sujeta a confirmación",
+        "whatsapp": "WhatsApp",
+        "footerSummary": "Orientación y cotización de insumos para el cuidado diario del adulto mayor en Panamá.",
+        "footerLegal": "La información del sitio es orientativa y no sustituye una evaluación profesional.",
+        "updated": "Última actualización",
+        "faqTitle": "Preguntas frecuentes",
+        "finalCtaTitle": "Cuéntanos qué necesitas",
+        "finalCtaText": "Podemos ayudarte a organizar una compra puntual, una cotización institucional o una planificación mensual.",
+        "finalCtaButton": "Hablar por WhatsApp",
+        "calculatorLabels": {
+          "perDay": "Pañales por día",
+          "patients": "Número de pacientes",
+          "days": "Días a cubrir",
+          "weekly": "Consumo semanal",
+          "fortnight": "Consumo quincenal",
+          "monthly": "Consumo para 30 días",
+          "period": "Consumo para el periodo",
+          "disclaimer": "Estimación orientativa. El consumo real puede variar.",
+          "cta": "Solicitar cotización con este consumo",
+          "calculate": "Calcular"
+        },
+        "productLabels": {
+          "uses": "Situaciones de uso",
+          "presentations": "Posibles presentaciones",
+          "related": "Productos relacionados",
+          "availability": "Disponibilidad sujeta a confirmación",
+          "quote": "Cotizar esta categoría"
+        }
+      },
+      "pages": {
+        "home": {
+          "type": "home",
+          "eyebrow": "Cuidado diario con orientación humana",
+          "title": "Todo lo que necesitas para facilitar el cuidado del adulto mayor",
+          "lead": "Pañales para adultos, protectores de cama, guantes, toallitas húmedas y otros insumos esenciales, con orientación personalizada y entrega a domicilio en Panamá.",
+          "imageKey": "homeHero",
+          "imageAlt": "Cuidadora conversando con una adulta mayor en un ambiente cálido y tranquilo",
+          "primaryCta": {
+            "label": "Cotizar ahora",
+            "context": "homeQuote"
+          },
+          "secondaryCta": {
+            "label": "Necesito ayuda para elegir",
+            "route": "guide"
+          },
+          "sections": [
+            {
+              "kind": "needSelector",
+              "id": "necesidades",
+              "eyebrow": "Empieza por tu situación",
+              "title": "Cuéntanos qué necesitas hoy",
+              "intro": "No tienes que conocer marcas, tallas o presentaciones antes de escribirnos. Elige la situación que más se parece a la tuya.",
+              "items": [
+                {
+                  "title": "Pañales para un familiar",
+                  "text": "Quiero cotizar pañales para una persona en casa.",
+                  "context": "familyDiapers"
+                },
+                {
+                  "title": "No conozco la talla",
+                  "text": "Necesito orientación para medir y comparar tallas.",
+                  "context": "chooseHelp"
+                },
+                {
+                  "title": "Cuidado de una persona en cama",
+                  "text": "Busco pañales, protectores y productos de higiene.",
+                  "context": "bedCare"
+                },
+                {
+                  "title": "Compra mensual",
+                  "text": "Quiero estimar cantidades y organizar el próximo pedido.",
+                  "context": "monthlyPlan"
+                },
+                {
+                  "title": "Geriátrico o centro de cuidado",
+                  "text": "Necesito una cotización institucional o por volumen.",
+                  "context": "institutional"
+                }
+              ]
+            },
+            {
+              "kind": "grid",
+              "id": "categorias",
+              "eyebrow": "Productos esenciales",
+              "title": "Soluciones para distintas rutinas de cuidado",
+              "intro": "La disponibilidad se confirma al momento de cotizar. Te orientamos según movilidad, talla, frecuencia de cambio y cantidad de personas.",
+              "items": [
+                {
+                  "title": "Pañales con adhesivos",
+                  "text": "Facilitan los cambios cuando la persona permanece acostada o necesita asistencia completa.",
+                  "route": "diapers"
+                },
+                {
+                  "title": "Pañales tipo pants",
+                  "text": "Se colocan como ropa interior y pueden ser prácticos para personas con movilidad.",
+                  "route": "diapers"
+                },
+                {
+                  "title": "Protectores de cama",
+                  "text": "Ayudan a proteger colchones, sillas y otras superficies durante la rutina diaria.",
+                  "route": "products"
+                },
+                {
+                  "title": "Guantes y toallitas",
+                  "text": "Complementos para higiene, limpieza y protección durante los cambios.",
+                  "route": "products"
+                }
+              ]
+            },
+            {
+              "kind": "split",
+              "id": "orientacion",
+              "eyebrow": "Orientación personalizada",
+              "title": "Elegir bien comienza con unas pocas preguntas",
+              "text": "Movilidad, contorno corporal, frecuencia de cambios y nivel de apoyo son datos más útiles que adivinar una talla. Nuestro formulario organiza esa información y prepara un resumen para WhatsApp.",
+              "imageKey": "caregiverSupport",
+              "imageAlt": "Persona cuidadora revisando una lista de suministros",
+              "bullets": [
+                "No necesitas conocer la talla exacta para comenzar.",
+                "La orientación es informativa y no sustituye una evaluación profesional.",
+                "Puedes solicitar una compra puntual o planificar cantidades recurrentes."
+              ],
+              "cta": {
+                "label": "Usar la guía para elegir",
+                "route": "guide"
+              }
+            },
+            {
+              "kind": "steps",
+              "id": "como-funciona",
+              "eyebrow": "Un proceso sencillo",
+              "title": "De la necesidad a una cotización clara",
+              "items": [
+                {
+                  "title": "1. Cuéntanos la situación",
+                  "text": "Indica para quién es, movilidad, talla conocida y zona de entrega."
+                },
+                {
+                  "title": "2. Revisamos contigo",
+                  "text": "El equipo confirma presentaciones y datos necesarios para cotizar."
+                },
+                {
+                  "title": "3. Organizas tu pedido",
+                  "text": "Puedes resolver una compra puntual o preparar una rutina mensual flexible."
+                }
+              ]
+            },
+            {
+              "kind": "highlight",
+              "id": "plan-mensual",
+              "eyebrow": "Menos improvisación",
+              "title": "Organiza una compra mensual sin convertirla en una suscripción automática",
+              "text": "Estimamos el consumo, incluimos productos complementarios y dejamos margen para cambiar cantidades o talla antes del próximo pedido.",
+              "cta": {
+                "label": "Quiero organizar mi compra mensual",
+                "context": "monthlyPlan"
+              }
+            },
+            {
+              "kind": "grid",
+              "id": "confianza",
+              "eyebrow": "Una atención pensada para cuidar",
+              "title": "Claridad antes de comprar",
+              "items": [
+                {
+                  "title": "Desde 2018",
+                  "text": "Acompañamos a familias, cuidadores y centros de cuidado en Panamá."
+                },
+                {
+                  "title": "Atención por necesidad",
+                  "text": "La conversación parte de la rutina real de cuidado, no de una lista fría de productos."
+                },
+                {
+                  "title": "Cotización confirmada",
+                  "text": "Precios, formatos y disponibilidad se validan directamente antes de cerrar el pedido."
+                },
+                {
+                  "title": "Privacidad práctica",
+                  "text": "Solicitamos solo información útil para orientar y cotizar. No pedimos expedientes médicos."
+                }
+              ]
+            }
+          ],
+          "faqs": [
+            {
+              "q": "¿Puedo pedir ayuda si no conozco la talla?",
+              "a": "Sí. Puedes indicar que no conoces la talla y recibir una guía sencilla para medir cintura y cadera. Las tallas cambian entre marcas, por eso se confirma cada opción antes de comprar."
+            },
+            {
+              "q": "¿Atienden compras para geriátricos?",
+              "a": "Sí. Existe un formulario institucional para organizar tallas, cantidades, frecuencia y zona de entrega."
+            },
+            {
+              "q": "¿El plan mensual es una suscripción automática?",
+              "a": "No. Es una forma de estimar y organizar pedidos recurrentes. Cada siguiente pedido puede ajustarse, posponerse o cancelarse."
+            }
+          ],
+          "formVariant": "family"
+        },
+        "diapers": {
+          "type": "diapers",
+          "eyebrow": "Guía y cotización en Panamá",
+          "title": "Pañales para adultos: tipos, talla y consumo orientativo",
+          "lead": "Compara pañales con adhesivos y tipo pants, revisa cómo estimar la talla y calcula una cantidad aproximada para tu periodo de cuidado.",
+          "imageKey": "diapersHero",
+          "imageAlt": "Paquetes genéricos de productos para el cuidado del adulto mayor",
+          "primaryCta": {
+            "label": "Solicitar cotización",
+            "context": "diapersPage"
+          },
+          "secondaryCta": {
+            "label": "Necesito ayuda para elegir",
+            "route": "guide"
+          },
+          "sections": [
+            {
+              "kind": "comparison",
+              "id": "tipos",
+              "eyebrow": "Dos formatos frecuentes",
+              "title": "Adhesivos o pants: la diferencia principal está en la forma de colocación",
+              "headers": [
+                "Aspecto",
+                "Con adhesivos",
+                "Tipo pants"
+              ],
+              "rows": [
+                [
+                  "Colocación",
+                  "Se ajustan con cintas laterales y pueden facilitar el cambio acostado.",
+                  "Se suben como ropa interior y suelen requerir mayor movilidad o apoyo para ponerse de pie."
+                ],
+                [
+                  "Ajuste",
+                  "Permiten abrir, revisar y reajustar durante la colocación.",
+                  "Ofrecen un formato discreto y continuo alrededor de la cintura."
+                ],
+                [
+                  "Situaciones habituales",
+                  "Personas encamadas, movilidad reducida o cambios con asistencia.",
+                  "Personas que caminan o participan activamente en el cambio."
+                ],
+                [
+                  "Elección",
+                  "Depende de la rutina, el apoyo disponible y el ajuste corporal.",
+                  "Depende de la movilidad, preferencia y facilidad para subir y bajar la prenda."
+                ]
+              ],
+              "note": "Estas referencias son orientativas. La elección final depende de la persona, el ajuste y la presentación disponible."
+            },
+            {
+              "kind": "grid",
+              "id": "movilidad",
+              "eyebrow": "Una decisión práctica",
+              "title": "La movilidad ayuda a orientar el formato",
+              "items": [
+                {
+                  "title": "Camina sin ayuda",
+                  "text": "Los pants pueden resultar prácticos si la persona puede subirlos y bajarlos."
+                },
+                {
+                  "title": "Camina con apoyo",
+                  "text": "Conviene valorar quién ayuda en el cambio y en qué posición se realiza."
+                },
+                {
+                  "title": "Permanece sentada gran parte del día",
+                  "text": "El ajuste en cintura, piernas y posición sentada cobra especial importancia."
+                },
+                {
+                  "title": "Permanece en cama",
+                  "text": "Los adhesivos suelen facilitar cambios laterales, pero la opción debe confirmarse según la rutina."
+                }
+              ]
+            },
+            {
+              "kind": "measurement",
+              "id": "talla",
+              "eyebrow": "Guía de talla",
+              "title": "Mide antes de comparar la tabla de cada marca",
+              "text": "Usa una cinta flexible para medir el contorno de la cintura y la parte más amplia de la cadera. Conserva ambas medidas y compáralas con la tabla específica de la presentación disponible.",
+              "steps": [
+                "Mide sin apretar demasiado la cinta.",
+                "Registra cintura y cadera en centímetros.",
+                "Usa la medida mayor cuando la tabla del producto así lo indique.",
+                "Confirma la tabla concreta: una talla M no mide igual en todas las marcas."
+              ],
+              "warning": "No elijas solamente por peso o por la talla usada en otra marca."
+            },
+            {
+              "kind": "calculator",
+              "id": "calculadora",
+              "eyebrow": "Estimación de consumo",
+              "title": "Calcula cuántas unidades podrías necesitar",
+              "intro": "Introduce un promedio diario, el número de pacientes y los días a cubrir. El resultado es orientativo y puede variar según la rutina de cambios."
+            },
+            {
+              "kind": "grid",
+              "id": "complementarios",
+              "eyebrow": "Completa la rutina",
+              "title": "Productos que suelen cotizarse junto con los pañales",
+              "items": [
+                {
+                  "title": "Protectores de cama",
+                  "text": "Para colchones, sillas o superficies utilizadas durante el cuidado."
+                },
+                {
+                  "title": "Guantes",
+                  "text": "Para apoyar las tareas de higiene y cambio."
+                },
+                {
+                  "title": "Toallitas húmedas",
+                  "text": "Para una limpieza práctica cuando resulten adecuadas para la rutina."
+                },
+                {
+                  "title": "Higiene y protección",
+                  "text": "Otros insumos se confirman según la necesidad y disponibilidad."
+                }
+              ]
+            },
+            {
+              "kind": "notice",
+              "id": "entrega",
+              "title": "Entrega y disponibilidad",
+              "text": "Mimo Senior atiende en Panamá. La zona, modalidad de entrega, formatos y disponibilidad se confirman por WhatsApp antes de completar el pedido."
+            }
+          ],
+          "faqs": [
+            {
+              "q": "¿Cuántos pañales usa una persona al día?",
+              "a": "No existe una cantidad única. Para planificar, puedes comenzar con el promedio real de cambios de varios días y usar la calculadora. La rutina, el tipo de producto y las necesidades de la persona pueden modificar el consumo."
+            },
+            {
+              "q": "¿Cómo sé si la talla es correcta?",
+              "a": "El producto debe ajustarse sin comprimir, sin espacios excesivos y siguiendo la tabla de la presentación. Si hay marcas profundas, deslizamiento o huecos en piernas, conviene revisar talla o ajuste."
+            },
+            {
+              "q": "¿Las tallas son iguales en todas las marcas?",
+              "a": "No. Los rangos cambian entre marcas y modelos. Compara siempre las medidas con la tabla específica del producto disponible."
+            }
+          ],
+          "formVariant": "family"
+        },
+        "products": {
+          "type": "products",
+          "eyebrow": "Catálogo orientativo",
+          "title": "Productos para el cuidado diario del adulto mayor",
+          "lead": "Explora las categorías que Mimo Senior puede ayudarte a cotizar. Las presentaciones y la disponibilidad se confirman directamente por WhatsApp.",
+          "imageKey": "productsHero",
+          "imageAlt": "Insumos de higiene y protección organizados sobre una mesa",
+          "primaryCta": {
+            "label": "Cotizar productos",
+            "context": "products"
+          },
+          "secondaryCta": {
+            "label": "Ayuda para elegir pañal",
+            "route": "guide"
+          },
+          "sections": [
+            {
+              "kind": "productCatalog",
+              "id": "categorias",
+              "title": "Categorías de productos",
+              "items": [
+                {
+                  "title": "Pañales para adultos",
+                  "text": "Categoría general de soluciones absorbentes para distintas rutinas de cuidado.",
+                  "uses": "Compras familiares, cuidados en casa y centros de cuidado.",
+                  "presentations": "Con adhesivos o tipo pants, según disponibilidad.",
+                  "related": "Protectores, guantes y toallitas.",
+                  "context": "productDiapers"
+                },
+                {
+                  "title": "Pañales con adhesivos",
+                  "text": "Se abren completamente y se ajustan con cintas laterales.",
+                  "uses": "Cambios con asistencia, movilidad limitada o cuidado en cama.",
+                  "presentations": "Tallas y niveles de absorción sujetos a confirmación.",
+                  "related": "Protectores de cama y guantes.",
+                  "context": "productTabs"
+                },
+                {
+                  "title": "Pañales tipo pants",
+                  "text": "Formato que se coloca como ropa interior.",
+                  "uses": "Personas con movilidad o que participan en el cambio.",
+                  "presentations": "Tallas y capacidades sujetas a confirmación.",
+                  "related": "Toallitas y productos de higiene.",
+                  "context": "productPants"
+                },
+                {
+                  "title": "Protectores de cama",
+                  "text": "Superficies absorbentes para apoyar la protección de colchones, sillas o áreas de cambio.",
+                  "uses": "Rutinas nocturnas, cambios y apoyo en cuidados prolongados.",
+                  "presentations": "Medidas y paquetes sujetos a confirmación.",
+                  "related": "Pañales con adhesivos y guantes.",
+                  "context": "productUnderpads"
+                },
+                {
+                  "title": "Guantes",
+                  "text": "Insumos para apoyar tareas de higiene y cuidado.",
+                  "uses": "Cambios, limpieza y manipulación de otros insumos.",
+                  "presentations": "Tallas, materiales y empaques sujetos a confirmación.",
+                  "related": "Toallitas y protectores.",
+                  "context": "productGloves"
+                },
+                {
+                  "title": "Toallitas húmedas",
+                  "text": "Apoyo para la limpieza práctica dentro de la rutina de cuidado.",
+                  "uses": "Cambios y aseo cotidiano cuando sean adecuadas para la persona.",
+                  "presentations": "Tamaños y cantidades sujetos a confirmación.",
+                  "related": "Pañales y guantes.",
+                  "context": "productWipes"
+                },
+                {
+                  "title": "Higiene y protección",
+                  "text": "Productos complementarios disponibles según necesidad.",
+                  "uses": "Organizar una solución más completa para el cuidado diario.",
+                  "presentations": "La categoría se revisa durante la cotización.",
+                  "related": "Puede combinarse con todas las categorías anteriores.",
+                  "context": "productHygiene"
+                }
+              ]
+            },
+            {
+              "kind": "notice",
+              "id": "disponibilidad",
+              "title": "Cómo se confirma una cotización",
+              "text": "No mostramos inventario ni precios sin verificar. Al escribir por WhatsApp, indica categoría, talla si la conoces, cantidad aproximada y zona de entrega. El equipo confirmará las opciones disponibles."
+            }
+          ],
+          "faqs": [
+            {
+              "q": "¿Puedo cotizar varias categorías en un solo mensaje?",
+              "a": "Sí. El formulario permite seleccionar productos adicionales y genera un resumen ordenado para WhatsApp."
+            },
+            {
+              "q": "¿La web muestra inventario en tiempo real?",
+              "a": "No. La disponibilidad, presentación y cantidad se confirman directamente durante la cotización."
+            }
+          ],
+          "formVariant": "family"
+        },
+        "guide": {
+          "type": "guide",
+          "eyebrow": "Asistente orientativo",
+          "title": "Ayuda para elegir un pañal para adulto",
+          "lead": "Responde preguntas sencillas sobre movilidad, talla y consumo. Al final obtendrás un resumen para revisar con el equipo de Mimo Senior por WhatsApp.",
+          "imageKey": "guideHero",
+          "imageAlt": "Cuidadora tomando medidas con una cinta flexible y anotando datos",
+          "primaryCta": {
+            "label": "Comenzar la guía",
+            "anchor": "#asistente"
+          },
+          "secondaryCta": {
+            "label": "Hablar directamente por WhatsApp",
+            "context": "chooseHelp"
+          },
+          "sections": [
+            {
+              "kind": "notice",
+              "id": "alcance",
+              "title": "Qué hace y qué no hace esta guía",
+              "text": "Organiza información práctica para una cotización. No diagnostica, prescribe ni sustituye la valoración de un profesional de salud."
+            },
+            {
+              "kind": "wizard",
+              "id": "asistente",
+              "eyebrow": "Paso a paso",
+              "title": "Prepara tu solicitud de orientación"
+            }
+          ],
+          "faqs": [
+            {
+              "q": "¿Qué pasa si no sé la talla?",
+              "a": "Selecciona “No la conozco”. La guía te indicará qué medidas pueden ayudar a comparar las tablas de los productos disponibles."
+            },
+            {
+              "q": "¿Debo incluir información médica?",
+              "a": "No. No envíes diagnósticos, expedientes ni imágenes clínicas. Para cotizar suelen bastar datos prácticos como movilidad, talla, consumo y zona de entrega."
+            }
+          ]
+        },
+        "monthly": {
+          "type": "monthly",
+          "eyebrow": "Planificación flexible",
+          "title": "Organiza tus insumos para el cuidado del adulto mayor cada mes",
+          "lead": "Calcula cantidades aproximadas, agrupa productos complementarios y prepara el siguiente pedido sin comprometerte con una suscripción automática.",
+          "imageKey": "monthlyPlanHero",
+          "imageAlt": "Calendario, lista y suministros organizados para una compra mensual",
+          "primaryCta": {
+            "label": "Quiero organizar mi compra mensual",
+            "context": "monthlyPlan"
+          },
+          "secondaryCta": {
+            "label": "Calcular consumo",
+            "route": "diapers",
+            "anchor": "#calculadora"
+          },
+          "sections": [
+            {
+              "kind": "steps",
+              "id": "proceso",
+              "eyebrow": "Cómo se organiza",
+              "title": "Una rutina de compra que puede ajustarse",
+              "items": [
+                {
+                  "title": "Estima el consumo",
+                  "text": "Parte del promedio de unidades diarias y los días que deseas cubrir."
+                },
+                {
+                  "title": "Agrupa los complementos",
+                  "text": "Incluye protectores, guantes, toallitas u otros insumos necesarios."
+                },
+                {
+                  "title": "Revisa antes del siguiente pedido",
+                  "text": "Confirma si cambió la talla, la cantidad, la frecuencia o la zona de entrega."
+                },
+                {
+                  "title": "Decide cada vez",
+                  "text": "Puedes modificar, posponer o cancelar el siguiente pedido antes de confirmarlo."
+                }
+              ]
+            },
+            {
+              "kind": "grid",
+              "id": "beneficios",
+              "eyebrow": "Más control",
+              "title": "Qué puedes organizar",
+              "items": [
+                {
+                  "title": "Recordatorios",
+                  "text": "Coordina cuándo conviene revisar existencias y preparar el próximo pedido."
+                },
+                {
+                  "title": "Cantidades",
+                  "text": "Ajusta el pedido si el consumo real fue mayor o menor que la estimación."
+                },
+                {
+                  "title": "Cambios de talla",
+                  "text": "Revisa medidas y presentación antes de repetir la compra."
+                },
+                {
+                  "title": "Varios productos",
+                  "text": "Consolida pañales, protectores, guantes y otros complementos."
+                },
+                {
+                  "title": "Pedidos flexibles",
+                  "text": "La periodicidad es una referencia de planificación, no un cobro automático."
+                },
+                {
+                  "title": "Centros de cuidado",
+                  "text": "También puede organizarse para varias tallas y pacientes."
+                }
+              ]
+            },
+            {
+              "kind": "calculator",
+              "id": "calculadora",
+              "eyebrow": "Haz una primera estimación",
+              "title": "Calculadora de consumo mensual",
+              "intro": "Usa el promedio diario actual. Después podrás enviar el resultado por WhatsApp para confirmar cantidades y presentaciones."
+            },
+            {
+              "kind": "notice",
+              "id": "sin-suscripcion",
+              "title": "No es una suscripción automática",
+              "text": "Mimo Senior no confirma, cobra ni despacha un nuevo pedido sin la coordinación correspondiente. La planificación mensual ayuda a anticipar necesidades, pero cada pedido se revisa."
+            }
+          ],
+          "faqs": [
+            {
+              "q": "¿Puedo cambiar la cantidad del siguiente pedido?",
+              "a": "Sí. La idea es adaptar la estimación al consumo real y a cualquier cambio de talla o rutina."
+            },
+            {
+              "q": "¿Puedo cancelar o posponer?",
+              "a": "Sí. Mientras el siguiente pedido no se haya confirmado, puedes modificar la fecha o no realizarlo."
+            }
+          ],
+          "formVariant": "family"
+        },
+        "institutions": {
+          "type": "institutions",
+          "eyebrow": "Atención institucional",
+          "title": "Pañales e insumos para geriátricos y centros de cuidado en Panamá",
+          "lead": "Organiza tallas, cantidades, frecuencia y productos complementarios en una solicitud institucional clara.",
+          "imageKey": "institutionsHero",
+          "imageAlt": "Equipo de un centro de cuidado organizando suministros por tallas",
+          "primaryCta": {
+            "label": "Solicitar cotización institucional",
+            "anchor": "#cotizacion"
+          },
+          "secondaryCta": {
+            "label": "Hablar por WhatsApp",
+            "context": "institutional"
+          },
+          "sections": [
+            {
+              "kind": "grid",
+              "id": "soluciones",
+              "eyebrow": "Compras con más variables",
+              "title": "Información que ayuda a preparar una cotización institucional",
+              "items": [
+                {
+                  "title": "Varias tallas y formatos",
+                  "text": "Detalla cantidades aproximadas por talla o tipo de pañal."
+                },
+                {
+                  "title": "Consumo mensual",
+                  "text": "Indica el consumo histórico o una estimación por paciente."
+                },
+                {
+                  "title": "Productos complementarios",
+                  "text": "Consolida protectores, guantes, toallitas y otros insumos."
+                },
+                {
+                  "title": "Frecuencia",
+                  "text": "Define si necesitas una compra puntual, quincenal, mensual u otra coordinación."
+                },
+                {
+                  "title": "Zona de entrega",
+                  "text": "Permite revisar la logística antes de confirmar el pedido."
+                },
+                {
+                  "title": "Contacto responsable",
+                  "text": "Centraliza la revisión con la persona encargada de compras o cuidado."
+                }
+              ]
+            },
+            {
+              "kind": "steps",
+              "id": "proceso",
+              "eyebrow": "Coordinación clara",
+              "title": "De la solicitud a la confirmación",
+              "items": [
+                {
+                  "title": "1. Completa los datos del centro",
+                  "text": "Incluye pacientes, tallas, consumo y productos."
+                },
+                {
+                  "title": "2. Revisión personalizada",
+                  "text": "El equipo valida qué información falta y qué presentaciones pueden cotizarse."
+                },
+                {
+                  "title": "3. Coordinación de entrega",
+                  "text": "Se confirman cantidades, disponibilidad, condiciones y zona antes del pedido."
+                }
+              ]
+            },
+            {
+              "kind": "institutionForm",
+              "id": "cotizacion",
+              "eyebrow": "Formulario institucional",
+              "title": "Prepara tu solicitud para WhatsApp"
+            }
+          ],
+          "faqs": [
+            {
+              "q": "¿Pueden cotizar varias tallas?",
+              "a": "Sí. El formulario permite registrar las tallas utilizadas y comentarios sobre cantidades o distribución."
+            },
+            {
+              "q": "¿Hay compra mínima por volumen?",
+              "a": "La web no establece una cantidad mínima. El equipo confirma las condiciones aplicables según la solicitud y la disponibilidad."
+            }
+          ]
+        },
+        "about": {
+          "type": "about",
+          "eyebrow": "Quiénes somos",
+          "title": "Un aliado para organizar el cuidado diario",
+          "lead": "Desde 2018, Mimo Senior ayuda a familias, cuidadores y centros de cuidado a encontrar y organizar insumos esenciales para adultos mayores en Panamá.",
+          "imageKey": "aboutHero",
+          "imageAlt": "Equipo de atención conversando con una familia sobre sus necesidades de cuidado",
+          "primaryCta": {
+            "label": "Cuéntanos qué necesitas",
+            "context": "contact"
+          },
+          "secondaryCta": {
+            "label": "Ver productos",
+            "route": "products"
+          },
+          "sections": [
+            {
+              "kind": "split",
+              "id": "historia",
+              "eyebrow": "Nuestra historia",
+              "title": "Resolver una necesidad que suele llegar con dudas y urgencia",
+              "text": "Comprar insumos para un adulto mayor no siempre comienza con una lista clara. Muchas familias no saben qué formato elegir, cómo comparar tallas o cuánto comprar. Mimo Senior nació para facilitar esa conversación y acompañar la organización del abastecimiento.",
+              "imageKey": "familyCare",
+              "imageAlt": "Familia organizando una rutina de cuidado en casa",
+              "bullets": [
+                "Atención a familias, cuidadores y centros.",
+                "Orientación basada en la situación práctica.",
+                "Confirmación directa de productos y disponibilidad."
+              ]
+            },
+            {
+              "kind": "grid",
+              "id": "proposito",
+              "eyebrow": "Lo que nos guía",
+              "title": "Misión, visión y valores",
+              "items": [
+                {
+                  "title": "Misión",
+                  "text": "Brindar soluciones integrales para el cuidado diario del adulto mayor, con insumos esenciales, atención personalizada y un servicio confiable que facilite la vida de quienes cuidan."
+                },
+                {
+                  "title": "Visión",
+                  "text": "Ser un aliado de referencia en Panamá para familias y centros que necesitan organizar de forma clara y humana sus insumos de cuidado."
+                },
+                {
+                  "title": "Empatía",
+                  "text": "Escuchamos la situación antes de presentar opciones."
+                },
+                {
+                  "title": "Dignidad",
+                  "text": "Comunicamos y representamos el cuidado con respeto."
+                },
+                {
+                  "title": "Claridad",
+                  "text": "Explicamos diferencias, medidas y próximos pasos sin complicaciones."
+                },
+                {
+                  "title": "Confianza",
+                  "text": "Confirmamos los datos comerciales antes de cerrar una compra."
+                }
+              ]
+            },
+            {
+              "kind": "steps",
+              "id": "forma-de-trabajar",
+              "eyebrow": "Forma de trabajar",
+              "title": "Una atención centrada en la necesidad",
+              "items": [
+                {
+                  "title": "Escuchar",
+                  "text": "Comprender para quién es, la movilidad, la talla y la frecuencia."
+                },
+                {
+                  "title": "Orientar",
+                  "text": "Aclarar formatos, medidas y productos complementarios."
+                },
+                {
+                  "title": "Confirmar",
+                  "text": "Validar disponibilidad, cantidades, entrega y cotización."
+                },
+                {
+                  "title": "Organizar",
+                  "text": "Facilitar compras puntuales o una planificación recurrente flexible."
+                }
+              ]
+            }
+          ],
+          "faqs": []
+        },
+        "faq": {
+          "type": "faq",
+          "eyebrow": "Respuestas claras",
+          "title": "Preguntas frecuentes sobre productos, tallas y cotizaciones",
+          "lead": "Consulta respuestas generales antes de escribir. Para confirmar productos, disponibilidad y entrega, utiliza WhatsApp.",
+          "imageKey": "contactSupport",
+          "imageAlt": "Persona revisando preguntas frecuentes en un teléfono",
+          "primaryCta": {
+            "label": "Hacer una consulta por WhatsApp",
+            "context": "contact"
+          },
+          "secondaryCta": {
+            "label": "Usar la guía para elegir",
+            "route": "guide"
+          },
+          "faqGroups": [
+            {
+              "title": "Compras y entregas",
+              "items": [
+                {
+                  "q": "¿Cómo solicito una cotización?",
+                  "a": "Elige cualquier botón de cotización, completa el formulario si lo deseas y envía el resumen por WhatsApp."
+                },
+                {
+                  "q": "¿En qué zonas entregan?",
+                  "a": "La zona general de servicio es Panamá. La cobertura, modalidad y condiciones se confirman según la ubicación indicada."
+                },
+                {
+                  "q": "¿La web permite pagar?",
+                  "a": "No. La web organiza la solicitud y abre WhatsApp. La cotización y cualquier proceso de compra se confirman directamente."
+                }
+              ]
+            },
+            {
+              "title": "Productos y pañales",
+              "items": [
+                {
+                  "q": "¿Qué diferencia hay entre adhesivos y pants?",
+                  "a": "Los adhesivos se abren completamente y suelen facilitar cambios con la persona acostada. Los pants se suben como ropa interior y pueden ser prácticos cuando hay movilidad."
+                },
+                {
+                  "q": "¿Venden productos además de pañales?",
+                  "a": "Sí. Se pueden cotizar protectores de cama, guantes, toallitas y otros productos complementarios sujetos a disponibilidad."
+                },
+                {
+                  "q": "¿Muestran marcas o inventario?",
+                  "a": "No se publica disponibilidad no verificada. El equipo confirma las opciones vigentes al recibir la solicitud."
+                }
+              ]
+            },
+            {
+              "title": "Tallas y consumo",
+              "items": [
+                {
+                  "q": "¿Cómo puedo medir la talla?",
+                  "a": "Mide cintura y la parte más amplia de la cadera con una cinta flexible, en centímetros, y compara las medidas con la tabla específica del producto."
+                },
+                {
+                  "q": "¿Puedo usar la misma talla en todas las marcas?",
+                  "a": "No. Los rangos pueden variar entre marcas y presentaciones."
+                },
+                {
+                  "q": "¿Cómo calculo el consumo mensual?",
+                  "a": "Multiplica el promedio de unidades por día por el número de pacientes y por los días a cubrir. La calculadora del sitio realiza esta estimación."
+                }
+              ]
+            },
+            {
+              "title": "Compras recurrentes y geriátricos",
+              "items": [
+                {
+                  "q": "¿El plan mensual cobra automáticamente?",
+                  "a": "No. Es una herramienta de organización. Cada pedido se confirma y puede ajustarse o posponerse."
+                },
+                {
+                  "q": "¿Atienden centros de cuidado?",
+                  "a": "Sí. El formulario institucional permite incluir pacientes, tallas, consumo, frecuencia y productos."
+                },
+                {
+                  "q": "¿Puedo cotizar por volumen?",
+                  "a": "Sí. Indica las cantidades aproximadas para que el equipo pueda revisar la solicitud."
+                }
+              ]
+            }
+          ]
+        },
+        "contact": {
+          "type": "contact",
+          "eyebrow": "Estamos para orientarte",
+          "title": "Contacta a Mimo Senior por WhatsApp",
+          "lead": "Cuéntanos qué necesitas, aunque todavía no conozcas la talla, el formato o la cantidad exacta.",
+          "imageKey": "contactSupport",
+          "imageAlt": "Asesora respondiendo una consulta de cuidado por WhatsApp",
+          "primaryCta": {
+            "label": "Abrir WhatsApp",
+            "context": "contact"
+          },
+          "secondaryCta": {
+            "label": "Completar formulario",
+            "anchor": "#formulario"
+          },
+          "sections": [
+            {
+              "kind": "grid",
+              "id": "antes-de-escribir",
+              "eyebrow": "Datos útiles",
+              "title": "Puedes preparar esta información",
+              "items": [
+                {
+                  "title": "Para quién es",
+                  "text": "Familiar, paciente, varios pacientes o centro de cuidado."
+                },
+                {
+                  "title": "Movilidad",
+                  "text": "Camina, requiere apoyo, permanece sentada o está en cama."
+                },
+                {
+                  "title": "Talla",
+                  "text": "Indica la talla actual o selecciona que no la conoces."
+                },
+                {
+                  "title": "Consumo",
+                  "text": "Promedio diario, semanal o mensual si lo tienes."
+                },
+                {
+                  "title": "Productos",
+                  "text": "Pañales, protectores, guantes, toallitas u otros."
+                },
+                {
+                  "title": "Zona de entrega",
+                  "text": "Área general en Panamá para revisar la coordinación."
+                }
+              ]
+            },
+            {
+              "kind": "contactCard",
+              "id": "canales",
+              "title": "Atención por WhatsApp",
+              "text": "Todos los formularios del sitio preparan un mensaje para el mismo canal de atención.",
+              "context": "contact"
+            },
+            {
+              "kind": "familyForm",
+              "id": "formulario",
+              "eyebrow": "Formulario breve",
+              "title": "Prepara un resumen antes de escribir"
+            }
+          ],
+          "faqs": [
+            {
+              "q": "¿Debo enviar información médica?",
+              "a": "No. Evita diagnósticos, expedientes, fotografías clínicas o información sensible que no sea necesaria para una cotización."
+            },
+            {
+              "q": "¿El formulario envía datos a un servidor?",
+              "a": "No. El formulario prepara el texto en tu navegador y lo abre en WhatsApp. Un borrador temporal puede guardarse en la sesión para no perder lo escrito."
+            }
+          ]
+        },
+        "privacy": {
+          "type": "privacy",
+          "eyebrow": "Información legal",
+          "title": "Política de privacidad",
+          "lead": "Esta política explica cómo el sitio prepara solicitudes de orientación y cotización sin enviar formularios a un servidor propio.",
+          "imageKey": "contactSupport",
+          "imageAlt": "Documento de privacidad mostrado en una pantalla",
+          "updated": "16 de junio de 2026",
+          "sections": [
+            {
+              "kind": "legal",
+              "id": "datos",
+              "title": "1. Datos que puede introducir el usuario",
+              "paragraphs": [
+                "Los formularios pueden solicitar nombre, número de WhatsApp, correo opcional, relación con la persona, zona de entrega, movilidad, talla, consumo aproximado, productos y comentarios. Los formularios institucionales pueden solicitar además el nombre del centro, cargo, número aproximado de pacientes y frecuencia de compra.",
+                "No deben enviarse diagnósticos, expedientes médicos, fotografías clínicas ni otra información sensible que no sea necesaria para orientar una cotización."
+              ]
+            },
+            {
+              "kind": "legal",
+              "id": "uso",
+              "title": "2. Para qué se utiliza la información",
+              "paragraphs": [
+                "La información se utiliza para organizar una solicitud, generar un resumen y facilitar una conversación por WhatsApp sobre orientación, disponibilidad, entrega y cotización.",
+                "El sitio no realiza diagnósticos, decisiones clínicas ni recomendaciones médicas."
+              ]
+            },
+            {
+              "kind": "legal",
+              "id": "whatsapp",
+              "title": "3. Envío mediante WhatsApp",
+              "paragraphs": [
+                "El formulario no se envía a un servidor de Mimo Senior. Al finalizar, el navegador construye un mensaje y abre un enlace de WhatsApp. El usuario decide si envía el mensaje.",
+                "El uso de WhatsApp queda sujeto a las condiciones y prácticas de privacidad de ese servicio."
+              ]
+            },
+            {
+              "kind": "legal",
+              "id": "almacenamiento",
+              "title": "4. Almacenamiento local",
+              "paragraphs": [
+                "El sitio puede utilizar sessionStorage para conservar temporalmente un borrador del formulario durante la sesión y localStorage para recordar la preferencia de tema. Estos datos permanecen en el dispositivo del usuario hasta que se eliminan, expira la sesión o se borran desde el navegador."
+              ]
+            },
+            {
+              "kind": "legal",
+              "id": "analitica",
+              "title": "5. Analítica",
+              "paragraphs": [
+                "La versión entregada no incluye identificadores reales de plataformas externas. Existe una capa técnica preparada para registrar eventos solo si posteriormente se configura una herramienta y el consentimiento aplicable."
+              ]
+            },
+            {
+              "kind": "legal",
+              "id": "derechos",
+              "title": "6. Opciones del usuario",
+              "paragraphs": [
+                "Antes de enviar un mensaje, el usuario puede editar o borrar cualquier dato del resumen. También puede eliminar los datos locales desde la configuración de su navegador.",
+                "Para consultas relacionadas con una conversación ya enviada, puede contactar a Mimo Senior por el mismo canal de WhatsApp."
+              ]
+            },
+            {
+              "kind": "legal",
+              "id": "cambios",
+              "title": "7. Cambios en esta política",
+              "paragraphs": [
+                "La política puede actualizarse cuando cambien los formularios, las herramientas de analítica o la forma de atención. La fecha de actualización se muestra al inicio de esta página."
+              ]
+            }
+          ],
+          "faqs": []
+        }
+      }
+    },
+    "en": {
+      "global": {
+        "skip": "Skip to content",
+        "menu": "Menu",
+        "closeMenu": "Close menu",
+        "language": "Español",
+        "themeLight": "Use light theme",
+        "themeDark": "Use dark theme",
+        "breadcrumbs": "Breadcrumbs",
+        "home": "Home",
+        "readMore": "Learn more",
+        "quote": "Request a quote",
+        "availability": "Availability subject to confirmation",
+        "whatsapp": "WhatsApp",
+        "footerSummary": "Guidance and quotations for everyday senior care supplies in Panama.",
+        "footerLegal": "Website information is general and does not replace professional assessment.",
+        "updated": "Last updated",
+        "faqTitle": "Frequently asked questions",
+        "finalCtaTitle": "Tell us what you need",
+        "finalCtaText": "We can help organise a one-time purchase, institutional quotation or flexible monthly plan.",
+        "finalCtaButton": "Talk on WhatsApp",
+        "calculatorLabels": {
+          "perDay": "Diapers per day",
+          "patients": "Number of patients",
+          "days": "Days to cover",
+          "weekly": "Weekly usage",
+          "fortnight": "Fortnightly usage",
+          "monthly": "30-day usage",
+          "period": "Selected period usage",
+          "disclaimer": "Informational estimate. Actual usage may vary.",
+          "cta": "Request a quote with this estimate",
+          "calculate": "Calculate"
+        },
+        "productLabels": {
+          "uses": "Situations of use",
+          "presentations": "Possible presentations",
+          "related": "Related products",
+          "availability": "Availability subject to confirmation",
+          "quote": "Quote this category"
+        }
+      },
+      "pages": {
+        "home": {
+          "type": "home",
+          "eyebrow": "Everyday care with human guidance",
+          "title": "Everything you need to make senior care easier",
+          "lead": "Adult diapers, bed protectors, gloves, wet wipes and other essential supplies, with personal guidance and delivery coordination in Panama.",
+          "imageKey": "homeHero",
+          "imageAlt": "Caregiver speaking with an older adult in a calm, welcoming setting",
+          "primaryCta": {
+            "label": "Request a quote",
+            "context": "homeQuote"
+          },
+          "secondaryCta": {
+            "label": "I need help choosing",
+            "route": "guide"
+          },
+          "sections": [
+            {
+              "kind": "needSelector",
+              "id": "needs",
+              "eyebrow": "Start with your situation",
+              "title": "Tell us what you need today",
+              "intro": "You do not need to know a brand, size or product format before contacting us. Choose the situation closest to yours.",
+              "items": [
+                {
+                  "title": "Diapers for a family member",
+                  "text": "I want to quote diapers for someone receiving care at home.",
+                  "context": "familyDiapers"
+                },
+                {
+                  "title": "I do not know the size",
+                  "text": "I need guidance on measuring and comparing size charts.",
+                  "context": "chooseHelp"
+                },
+                {
+                  "title": "Care for someone in bed",
+                  "text": "I am looking for diapers, underpads and hygiene supplies.",
+                  "context": "bedCare"
+                },
+                {
+                  "title": "Monthly purchase planning",
+                  "text": "I want to estimate quantities and prepare the next order.",
+                  "context": "monthlyPlan"
+                },
+                {
+                  "title": "Care home or facility",
+                  "text": "I need an institutional or volume quotation.",
+                  "context": "institutional"
+                }
+              ]
+            },
+            {
+              "kind": "grid",
+              "id": "categories",
+              "eyebrow": "Essential supplies",
+              "title": "Options for different care routines",
+              "intro": "Availability is confirmed when you request a quote. Guidance considers mobility, size, change frequency and number of people.",
+              "items": [
+                {
+                  "title": "Tab-style adult diapers",
+                  "text": "They may make assisted changes easier when a person remains in bed or has limited mobility.",
+                  "route": "diapers"
+                },
+                {
+                  "title": "Pull-up adult diapers",
+                  "text": "They are worn like underwear and may be practical for people with mobility.",
+                  "route": "diapers"
+                },
+                {
+                  "title": "Bed protectors",
+                  "text": "They help protect mattresses, chairs and other surfaces during daily care.",
+                  "route": "products"
+                },
+                {
+                  "title": "Gloves and wet wipes",
+                  "text": "Supporting supplies for hygiene, cleaning and changes.",
+                  "route": "products"
+                }
+              ]
+            },
+            {
+              "kind": "split",
+              "id": "guidance",
+              "eyebrow": "Personal guidance",
+              "title": "Choosing well starts with a few practical questions",
+              "text": "Mobility, body measurements, change frequency and level of assistance are more useful than guessing a size. Our form organises this information and prepares a WhatsApp summary.",
+              "imageKey": "caregiverSupport",
+              "imageAlt": "Caregiver reviewing a senior care supply list",
+              "bullets": [
+                "You can start even when the exact size is unknown.",
+                "Guidance is informational and does not replace professional assessment.",
+                "You may request a one-time purchase or plan recurring quantities."
+              ],
+              "cta": {
+                "label": "Use the choosing guide",
+                "route": "guide"
+              }
+            },
+            {
+              "kind": "steps",
+              "id": "how-it-works",
+              "eyebrow": "A simple process",
+              "title": "From your need to a clear quotation",
+              "items": [
+                {
+                  "title": "1. Describe the situation",
+                  "text": "Tell us who it is for, mobility, known size and delivery area."
+                },
+                {
+                  "title": "2. Review the details",
+                  "text": "The team confirms formats and the information needed to quote."
+                },
+                {
+                  "title": "3. Organise the order",
+                  "text": "Handle a one-time purchase or prepare a flexible monthly routine."
+                }
+              ]
+            },
+            {
+              "kind": "highlight",
+              "id": "monthly-plan",
+              "eyebrow": "Less last-minute buying",
+              "title": "Plan a monthly purchase without creating an automatic subscription",
+              "text": "Estimate usage, add complementary supplies and leave room to change quantities or size before the next order.",
+              "cta": {
+                "label": "Organise my monthly purchase",
+                "context": "monthlyPlan"
+              }
+            },
+            {
+              "kind": "grid",
+              "id": "trust",
+              "eyebrow": "Support designed around care",
+              "title": "Clarity before you buy",
+              "items": [
+                {
+                  "title": "Since 2018",
+                  "text": "Supporting families, caregivers and care facilities in Panama."
+                },
+                {
+                  "title": "Need-based support",
+                  "text": "The conversation starts with the real care routine, not a cold product list."
+                },
+                {
+                  "title": "Confirmed quotation",
+                  "text": "Prices, formats and availability are validated before an order is completed."
+                },
+                {
+                  "title": "Practical privacy",
+                  "text": "We request only information useful for guidance and quoting. We do not ask for medical records."
+                }
+              ]
+            }
+          ],
+          "faqs": [
+            {
+              "q": "Can I ask for help when I do not know the size?",
+              "a": "Yes. Select that the size is unknown and follow a simple guide for measuring waist and hips. Size ranges vary by brand, so the specific chart must be checked before buying."
+            },
+            {
+              "q": "Do you quote supplies for care homes?",
+              "a": "Yes. The institutional form organises sizes, quantities, frequency and delivery area."
+            },
+            {
+              "q": "Is the monthly plan an automatic subscription?",
+              "a": "No. It is a way to estimate and organise recurring orders. The next order may be adjusted, postponed or cancelled."
+            }
+          ],
+          "formVariant": "family"
+        },
+        "diapers": {
+          "type": "diapers",
+          "eyebrow": "Guidance and quotes in Panama",
+          "title": "Adult diapers: types, sizing and estimated use",
+          "lead": "Compare tab-style and pull-up diapers, learn how to approach sizing and calculate an approximate quantity for a care period.",
+          "imageKey": "diapersHero",
+          "imageAlt": "Generic packages of senior care supplies",
+          "primaryCta": {
+            "label": "Request a quote",
+            "context": "diapersPage"
+          },
+          "secondaryCta": {
+            "label": "I need help choosing",
+            "route": "guide"
+          },
+          "sections": [
+            {
+              "kind": "comparison",
+              "id": "types",
+              "eyebrow": "Two common formats",
+              "title": "Tabs or pull-ups: the main difference is how they are put on",
+              "headers": [
+                "Aspect",
+                "Tab-style",
+                "Pull-up"
+              ],
+              "rows": [
+                [
+                  "How it is worn",
+                  "Opens fully and fastens at the sides, which can support changes while lying down.",
+                  "Pulls on like underwear and usually requires more mobility or assistance with standing."
+                ],
+                [
+                  "Adjustment",
+                  "Can be opened and repositioned during fitting.",
+                  "Provides a continuous underwear-style waistband."
+                ],
+                [
+                  "Common situations",
+                  "Bed care, limited mobility or fully assisted changes.",
+                  "People who walk or actively participate in changing."
+                ],
+                [
+                  "Choice",
+                  "Depends on the routine, available assistance and body fit.",
+                  "Depends on mobility, preference and the ability to pull the garment up and down."
+                ]
+              ],
+              "note": "These references are general. The final choice depends on the person, fit and available presentation."
+            },
+            {
+              "kind": "grid",
+              "id": "mobility",
+              "eyebrow": "A practical starting point",
+              "title": "Mobility helps narrow the format",
+              "items": [
+                {
+                  "title": "Walks independently",
+                  "text": "Pull-ups may be practical when the person can raise and lower them."
+                },
+                {
+                  "title": "Walks with support",
+                  "text": "Consider who assists and the position used during changes."
+                },
+                {
+                  "title": "Sits for much of the day",
+                  "text": "Fit at the waist, legs and seated position becomes especially important."
+                },
+                {
+                  "title": "Remains in bed",
+                  "text": "Tabs often support side-to-side changes, but the routine should be reviewed."
+                }
+              ]
+            },
+            {
+              "kind": "measurement",
+              "id": "size",
+              "eyebrow": "Sizing guide",
+              "title": "Measure before comparing each brand chart",
+              "text": "Use a flexible tape to measure the waist and widest part of the hips. Keep both measurements and compare them with the chart for the exact product being quoted.",
+              "steps": [
+                "Measure without pulling the tape too tight.",
+                "Record waist and hip measurements in centimetres.",
+                "Use the larger measurement when the product chart instructs you to do so.",
+                "Confirm the exact chart: a Medium is not identical across brands."
+              ],
+              "warning": "Do not choose only by body weight or by a size used in another brand."
+            },
+            {
+              "kind": "calculator",
+              "id": "calculator",
+              "eyebrow": "Usage estimate",
+              "title": "Estimate how many units you may need",
+              "intro": "Enter average daily use, number of patients and days to cover. Results are estimates and may vary with the care routine."
+            },
+            {
+              "kind": "grid",
+              "id": "related",
+              "eyebrow": "Complete the routine",
+              "title": "Supplies often quoted with adult diapers",
+              "items": [
+                {
+                  "title": "Bed protectors",
+                  "text": "For mattresses, chairs or surfaces used during care."
+                },
+                {
+                  "title": "Gloves",
+                  "text": "To support hygiene and changing tasks."
+                },
+                {
+                  "title": "Wet wipes",
+                  "text": "For practical cleaning when suitable for the care routine."
+                },
+                {
+                  "title": "Hygiene and protection",
+                  "text": "Other supplies are confirmed according to need and availability."
+                }
+              ]
+            },
+            {
+              "kind": "notice",
+              "id": "delivery",
+              "title": "Delivery and availability",
+              "text": "Mimo Senior serves customers in Panama. Area, delivery arrangements, formats and availability are confirmed through WhatsApp before an order is completed."
+            }
+          ],
+          "faqs": [
+            {
+              "q": "How many diapers does one person use per day?",
+              "a": "There is no universal number. Start with the actual average over several days and use the calculator. The routine, product type and individual needs may change usage."
+            },
+            {
+              "q": "How can I tell whether the size fits?",
+              "a": "The product should fit without excessive pressure or large gaps and should follow the product chart. Deep marks, slipping or openings around the legs are reasons to review the size or fit."
+            },
+            {
+              "q": "Are sizes the same across brands?",
+              "a": "No. Ranges differ by brand and model. Always compare measurements with the chart for the available product."
+            }
+          ],
+          "formVariant": "family"
+        },
+        "products": {
+          "type": "products",
+          "eyebrow": "Product overview",
+          "title": "Products for everyday senior care",
+          "lead": "Explore the categories Mimo Senior can help you quote. Presentations and availability are confirmed directly through WhatsApp.",
+          "imageKey": "productsHero",
+          "imageAlt": "Hygiene and protection supplies arranged on a table",
+          "primaryCta": {
+            "label": "Quote products",
+            "context": "products"
+          },
+          "secondaryCta": {
+            "label": "Help choosing diapers",
+            "route": "guide"
+          },
+          "sections": [
+            {
+              "kind": "productCatalog",
+              "id": "categories",
+              "title": "Product categories",
+              "items": [
+                {
+                  "title": "Adult diapers",
+                  "text": "General category of absorbent products for different care routines.",
+                  "uses": "Family purchases, home care and care facilities.",
+                  "presentations": "Tab-style or pull-up, subject to availability.",
+                  "related": "Underpads, gloves and wipes.",
+                  "context": "productDiapers"
+                },
+                {
+                  "title": "Tab-style diapers",
+                  "text": "Open fully and fasten with side tabs.",
+                  "uses": "Assisted changes, limited mobility or bed care.",
+                  "presentations": "Sizes and absorbency options subject to confirmation.",
+                  "related": "Underpads and gloves.",
+                  "context": "productTabs"
+                },
+                {
+                  "title": "Pull-up diapers",
+                  "text": "Underwear-style format.",
+                  "uses": "People with mobility or who participate in changes.",
+                  "presentations": "Sizes and capacities subject to confirmation.",
+                  "related": "Wipes and hygiene supplies.",
+                  "context": "productPants"
+                },
+                {
+                  "title": "Bed protectors",
+                  "text": "Absorbent surfaces that help protect mattresses, chairs or changing areas.",
+                  "uses": "Night routines, changes and longer-term care.",
+                  "presentations": "Sizes and pack counts subject to confirmation.",
+                  "related": "Tab-style diapers and gloves.",
+                  "context": "productUnderpads"
+                },
+                {
+                  "title": "Gloves",
+                  "text": "Supplies that support hygiene and care tasks.",
+                  "uses": "Changes, cleaning and handling other supplies.",
+                  "presentations": "Sizes, materials and packs subject to confirmation.",
+                  "related": "Wipes and underpads.",
+                  "context": "productGloves"
+                },
+                {
+                  "title": "Wet wipes",
+                  "text": "Practical cleaning support within a care routine.",
+                  "uses": "Changes and daily hygiene when appropriate for the person.",
+                  "presentations": "Sheet sizes and pack counts subject to confirmation.",
+                  "related": "Diapers and gloves.",
+                  "context": "productWipes"
+                },
+                {
+                  "title": "Hygiene and protection",
+                  "text": "Complementary products available according to need.",
+                  "uses": "Building a more complete everyday care solution.",
+                  "presentations": "The category is reviewed during quotation.",
+                  "related": "May be combined with all categories above.",
+                  "context": "productHygiene"
+                }
+              ]
+            },
+            {
+              "kind": "notice",
+              "id": "availability",
+              "title": "How a quotation is confirmed",
+              "text": "We do not display unverified stock or pricing. In WhatsApp, mention category, size if known, approximate quantity and delivery area. The team will confirm current options."
+            }
+          ],
+          "faqs": [
+            {
+              "q": "Can I quote several categories in one message?",
+              "a": "Yes. The form lets you select additional supplies and generates an organised WhatsApp summary."
+            },
+            {
+              "q": "Does the website show real-time inventory?",
+              "a": "No. Availability, presentation and quantity are confirmed directly during the quotation."
+            }
+          ],
+          "formVariant": "family"
+        },
+        "guide": {
+          "type": "guide",
+          "eyebrow": "Informational assistant",
+          "title": "Help choosing an adult diaper",
+          "lead": "Answer simple questions about mobility, size and usage. At the end, you will have a summary for the Mimo Senior team to review in WhatsApp.",
+          "imageKey": "guideHero",
+          "imageAlt": "Caregiver taking measurements with a flexible tape and making notes",
+          "primaryCta": {
+            "label": "Start the guide",
+            "anchor": "#assistant"
+          },
+          "secondaryCta": {
+            "label": "Talk directly on WhatsApp",
+            "context": "chooseHelp"
+          },
+          "sections": [
+            {
+              "kind": "notice",
+              "id": "scope",
+              "title": "What this guide does and does not do",
+              "text": "It organises practical information for a quotation. It does not diagnose, prescribe or replace a health professional’s assessment."
+            },
+            {
+              "kind": "wizard",
+              "id": "assistant",
+              "eyebrow": "Step by step",
+              "title": "Prepare your request for guidance"
+            }
+          ],
+          "faqs": [
+            {
+              "q": "What if I do not know the size?",
+              "a": "Select “I do not know”. The guide explains which measurements can help compare the charts for available products."
+            },
+            {
+              "q": "Should I include medical information?",
+              "a": "No. Do not send diagnoses, medical records or clinical images. Practical details such as mobility, size, usage and delivery area are normally enough for a quote."
+            }
+          ]
+        },
+        "monthly": {
+          "type": "monthly",
+          "eyebrow": "Flexible planning",
+          "title": "Organise senior care supplies month by month",
+          "lead": "Estimate quantities, group complementary supplies and prepare the next order without committing to an automatic subscription.",
+          "imageKey": "monthlyPlanHero",
+          "imageAlt": "Calendar, checklist and supplies organised for a monthly purchase",
+          "primaryCta": {
+            "label": "Organise my monthly purchase",
+            "context": "monthlyPlan"
+          },
+          "secondaryCta": {
+            "label": "Calculate usage",
+            "route": "diapers",
+            "anchor": "#calculator"
+          },
+          "sections": [
+            {
+              "kind": "steps",
+              "id": "process",
+              "eyebrow": "How planning works",
+              "title": "A purchase routine you can adjust",
+              "items": [
+                {
+                  "title": "Estimate usage",
+                  "text": "Start with average units per day and the number of days to cover."
+                },
+                {
+                  "title": "Group complementary supplies",
+                  "text": "Include underpads, gloves, wipes or other needed items."
+                },
+                {
+                  "title": "Review before the next order",
+                  "text": "Confirm changes in size, quantity, frequency or delivery area."
+                },
+                {
+                  "title": "Decide each time",
+                  "text": "Modify, postpone or cancel the next order before it is confirmed."
+                }
+              ]
+            },
+            {
+              "kind": "grid",
+              "id": "benefits",
+              "eyebrow": "More control",
+              "title": "What you can organise",
+              "items": [
+                {
+                  "title": "Reminders",
+                  "text": "Coordinate when to review remaining stock and prepare the next order."
+                },
+                {
+                  "title": "Quantities",
+                  "text": "Adjust when actual usage is higher or lower than the estimate."
+                },
+                {
+                  "title": "Size changes",
+                  "text": "Review measurements and format before repeating the purchase."
+                },
+                {
+                  "title": "Multiple products",
+                  "text": "Consolidate diapers, underpads, gloves and other supplies."
+                },
+                {
+                  "title": "Flexible orders",
+                  "text": "Frequency is a planning reference, not an automatic charge."
+                },
+                {
+                  "title": "Care facilities",
+                  "text": "Planning may include several sizes and patients."
+                }
+              ]
+            },
+            {
+              "kind": "calculator",
+              "id": "calculator",
+              "eyebrow": "Create a first estimate",
+              "title": "Monthly usage calculator",
+              "intro": "Use the current daily average. You can then send the result through WhatsApp to confirm quantities and presentations."
+            },
+            {
+              "kind": "notice",
+              "id": "not-subscription",
+              "title": "Not an automatic subscription",
+              "text": "Mimo Senior does not confirm, charge or dispatch a new order without coordination. Monthly planning helps anticipate needs, but every order is reviewed."
+            }
+          ],
+          "faqs": [
+            {
+              "q": "Can I change the next order quantity?",
+              "a": "Yes. The estimate should adapt to actual usage and any change in size or routine."
+            },
+            {
+              "q": "Can I cancel or postpone it?",
+              "a": "Yes. As long as the next order has not been confirmed, you can change the date or decide not to place it."
+            }
+          ],
+          "formVariant": "family"
+        },
+        "institutions": {
+          "type": "institutions",
+          "eyebrow": "Institutional support",
+          "title": "Adult diapers and supplies for care homes in Panama",
+          "lead": "Organise sizes, quantities, frequency and complementary supplies in one clear institutional request.",
+          "imageKey": "institutionsHero",
+          "imageAlt": "Care facility staff organising supplies by size",
+          "primaryCta": {
+            "label": "Request an institutional quote",
+            "anchor": "#quotation"
+          },
+          "secondaryCta": {
+            "label": "Talk on WhatsApp",
+            "context": "institutional"
+          },
+          "sections": [
+            {
+              "kind": "grid",
+              "id": "solutions",
+              "eyebrow": "Purchases with more variables",
+              "title": "Information that helps prepare an institutional quote",
+              "items": [
+                {
+                  "title": "Multiple sizes and formats",
+                  "text": "List approximate quantities by size or diaper type."
+                },
+                {
+                  "title": "Monthly usage",
+                  "text": "Share historical use or an estimate per patient."
+                },
+                {
+                  "title": "Complementary supplies",
+                  "text": "Consolidate underpads, gloves, wipes and other items."
+                },
+                {
+                  "title": "Frequency",
+                  "text": "Indicate one-time, fortnightly, monthly or another schedule."
+                },
+                {
+                  "title": "Delivery area",
+                  "text": "Allows logistics to be reviewed before confirmation."
+                },
+                {
+                  "title": "Responsible contact",
+                  "text": "Centralises review with the person responsible for purchasing or care."
+                }
+              ]
+            },
+            {
+              "kind": "steps",
+              "id": "process",
+              "eyebrow": "Clear coordination",
+              "title": "From request to confirmation",
+              "items": [
+                {
+                  "title": "1. Add facility details",
+                  "text": "Include patients, sizes, usage and products."
+                },
+                {
+                  "title": "2. Personal review",
+                  "text": "The team checks missing information and products that may be quoted."
+                },
+                {
+                  "title": "3. Delivery coordination",
+                  "text": "Quantities, availability, conditions and area are confirmed before the order."
+                }
+              ]
+            },
+            {
+              "kind": "institutionForm",
+              "id": "quotation",
+              "eyebrow": "Institutional form",
+              "title": "Prepare your WhatsApp request"
+            }
+          ],
+          "faqs": [
+            {
+              "q": "Can you quote multiple sizes?",
+              "a": "Yes. The form includes a field for sizes used and comments about quantities or distribution."
+            },
+            {
+              "q": "Is there a minimum volume order?",
+              "a": "The website does not state a minimum. The team confirms any applicable conditions based on the request and availability."
+            }
+          ]
+        },
+        "about": {
+          "type": "about",
+          "eyebrow": "About us",
+          "title": "An ally for organising everyday care",
+          "lead": "Since 2018, Mimo Senior has helped families, caregivers and care facilities find and organise essential senior care supplies in Panama.",
+          "imageKey": "aboutHero",
+          "imageAlt": "Support team discussing care needs with a family",
+          "primaryCta": {
+            "label": "Tell us what you need",
+            "context": "contact"
+          },
+          "secondaryCta": {
+            "label": "View products",
+            "route": "products"
+          },
+          "sections": [
+            {
+              "kind": "split",
+              "id": "story",
+              "eyebrow": "Our story",
+              "title": "Solving a need that often arrives with uncertainty and urgency",
+              "text": "Buying supplies for an older adult does not always begin with a clear list. Many families are unsure about formats, size charts or quantities. Mimo Senior was created to make that conversation easier and support supply planning.",
+              "imageKey": "familyCare",
+              "imageAlt": "Family organising a care routine at home",
+              "bullets": [
+                "Support for families, caregivers and facilities.",
+                "Guidance based on the practical situation.",
+                "Direct confirmation of products and availability."
+              ]
+            },
+            {
+              "kind": "grid",
+              "id": "purpose",
+              "eyebrow": "What guides us",
+              "title": "Mission, vision and values",
+              "items": [
+                {
+                  "title": "Mission",
+                  "text": "Provide integrated solutions for everyday senior care through essential supplies, personal support and reliable service that makes life easier for those who care."
+                },
+                {
+                  "title": "Vision",
+                  "text": "Become a trusted reference in Panama for families and facilities that need to organise care supplies clearly and humanely."
+                },
+                {
+                  "title": "Empathy",
+                  "text": "We listen to the situation before presenting options."
+                },
+                {
+                  "title": "Dignity",
+                  "text": "We communicate and represent care respectfully."
+                },
+                {
+                  "title": "Clarity",
+                  "text": "We explain differences, measurements and next steps without unnecessary complexity."
+                },
+                {
+                  "title": "Trust",
+                  "text": "We confirm commercial details before completing a purchase."
+                }
+              ]
+            },
+            {
+              "kind": "steps",
+              "id": "how-we-work",
+              "eyebrow": "How we work",
+              "title": "Support centred on the need",
+              "items": [
+                {
+                  "title": "Listen",
+                  "text": "Understand who it is for, mobility, size and frequency."
+                },
+                {
+                  "title": "Guide",
+                  "text": "Clarify formats, measurements and complementary supplies."
+                },
+                {
+                  "title": "Confirm",
+                  "text": "Validate availability, quantities, delivery and quotation."
+                },
+                {
+                  "title": "Organise",
+                  "text": "Support one-time purchases or flexible recurring planning."
+                }
+              ]
+            }
+          ],
+          "faqs": []
+        },
+        "faq": {
+          "type": "faq",
+          "eyebrow": "Clear answers",
+          "title": "Frequently asked questions about products, sizes and quotes",
+          "lead": "Review general answers before contacting us. Use WhatsApp to confirm products, availability and delivery.",
+          "imageKey": "contactSupport",
+          "imageAlt": "Person reviewing frequently asked questions on a phone",
+          "primaryCta": {
+            "label": "Ask on WhatsApp",
+            "context": "contact"
+          },
+          "secondaryCta": {
+            "label": "Use the choosing guide",
+            "route": "guide"
+          },
+          "faqGroups": [
+            {
+              "title": "Purchases and delivery",
+              "items": [
+                {
+                  "q": "How do I request a quote?",
+                  "a": "Use any quotation button, complete the form if useful and send the generated summary through WhatsApp."
+                },
+                {
+                  "q": "Where do you deliver?",
+                  "a": "The general service area is Panama. Coverage, method and conditions are confirmed according to the location provided."
+                },
+                {
+                  "q": "Can I pay on the website?",
+                  "a": "No. The website organises the request and opens WhatsApp. The quotation and any purchase process are confirmed directly."
+                }
+              ]
+            },
+            {
+              "title": "Products and diapers",
+              "items": [
+                {
+                  "q": "What is the difference between tabs and pull-ups?",
+                  "a": "Tab-style diapers open fully and may support changes while lying down. Pull-ups are worn like underwear and may be practical for people with mobility."
+                },
+                {
+                  "q": "Do you sell products besides diapers?",
+                  "a": "Yes. Underpads, gloves, wet wipes and other complementary products may be quoted subject to availability."
+                },
+                {
+                  "q": "Does the site show brands or inventory?",
+                  "a": "Unverified availability is not published. The team confirms current options after receiving the request."
+                }
+              ]
+            },
+            {
+              "title": "Sizing and usage",
+              "items": [
+                {
+                  "q": "How do I measure for size?",
+                  "a": "Measure the waist and widest part of the hips with a flexible tape in centimetres, then compare with the exact product chart."
+                },
+                {
+                  "q": "Can I use the same size in every brand?",
+                  "a": "No. Size ranges may differ by brand and product."
+                },
+                {
+                  "q": "How do I estimate monthly usage?",
+                  "a": "Multiply average units per day by number of patients and days to cover. The website calculator performs this estimate."
+                }
+              ]
+            },
+            {
+              "title": "Recurring purchases and facilities",
+              "items": [
+                {
+                  "q": "Does the monthly plan charge automatically?",
+                  "a": "No. It is a planning tool. Every order is confirmed and may be adjusted or postponed."
+                },
+                {
+                  "q": "Do you serve care facilities?",
+                  "a": "Yes. The institutional form includes patients, sizes, usage, frequency and products."
+                },
+                {
+                  "q": "Can I request a volume quote?",
+                  "a": "Yes. Include approximate quantities so the team can review the request."
+                }
+              ]
+            }
+          ]
+        },
+        "contact": {
+          "type": "contact",
+          "eyebrow": "We are here to guide you",
+          "title": "Contact Mimo Senior through WhatsApp",
+          "lead": "Tell us what you need even when you do not yet know the size, format or exact quantity.",
+          "imageKey": "contactSupport",
+          "imageAlt": "Advisor responding to a senior care question through WhatsApp",
+          "primaryCta": {
+            "label": "Open WhatsApp",
+            "context": "contact"
+          },
+          "secondaryCta": {
+            "label": "Complete the form",
+            "anchor": "#form"
+          },
+          "sections": [
+            {
+              "kind": "grid",
+              "id": "before-contact",
+              "eyebrow": "Useful details",
+              "title": "You can prepare this information",
+              "items": [
+                {
+                  "title": "Who it is for",
+                  "text": "Family member, patient, several patients or a care facility."
+                },
+                {
+                  "title": "Mobility",
+                  "text": "Walks, needs support, remains seated or is in bed."
+                },
+                {
+                  "title": "Size",
+                  "text": "Share the current size or select that it is unknown."
+                },
+                {
+                  "title": "Usage",
+                  "text": "Daily, weekly or monthly average if available."
+                },
+                {
+                  "title": "Products",
+                  "text": "Diapers, underpads, gloves, wipes or other supplies."
+                },
+                {
+                  "title": "Delivery area",
+                  "text": "General area in Panama for coordination."
+                }
+              ]
+            },
+            {
+              "kind": "contactCard",
+              "id": "channels",
+              "title": "WhatsApp support",
+              "text": "Every form on the site prepares a message for the same support channel.",
+              "context": "contact"
+            },
+            {
+              "kind": "familyForm",
+              "id": "form",
+              "eyebrow": "Short form",
+              "title": "Prepare a summary before contacting us"
+            }
+          ],
+          "faqs": [
+            {
+              "q": "Should I send medical information?",
+              "a": "No. Avoid diagnoses, medical records, clinical photographs or sensitive information that is unnecessary for a quotation."
+            },
+            {
+              "q": "Does the form send data to a server?",
+              "a": "No. The form prepares the text in your browser and opens WhatsApp. A temporary draft may be stored for the current session so you do not lose your entries."
+            }
+          ]
+        },
+        "privacy": {
+          "type": "privacy",
+          "eyebrow": "Legal information",
+          "title": "Privacy policy",
+          "lead": "This policy explains how the website prepares guidance and quotation requests without submitting forms to a proprietary server.",
+          "imageKey": "contactSupport",
+          "imageAlt": "Privacy document displayed on a screen",
+          "updated": "June 16, 2026",
+          "sections": [
+            {
+              "kind": "legal",
+              "id": "data",
+              "title": "1. Information a user may enter",
+              "paragraphs": [
+                "Forms may request name, WhatsApp number, optional email, relationship to the person, delivery area, mobility, size, estimated use, products and comments. Institutional forms may also request facility name, role, approximate number of patients and purchase frequency.",
+                "Do not submit diagnoses, medical records, clinical photographs or other sensitive information that is not required to prepare a quotation."
+              ]
+            },
+            {
+              "kind": "legal",
+              "id": "use",
+              "title": "2. How information is used",
+              "paragraphs": [
+                "Information is used to organise a request, generate a summary and facilitate a WhatsApp conversation about guidance, availability, delivery and quotation.",
+                "The website does not provide diagnoses, clinical decisions or medical recommendations."
+              ]
+            },
+            {
+              "kind": "legal",
+              "id": "whatsapp",
+              "title": "3. Sending through WhatsApp",
+              "paragraphs": [
+                "The form is not submitted to a Mimo Senior server. When finished, the browser builds a message and opens a WhatsApp link. The user decides whether to send it.",
+                "Use of WhatsApp is subject to that service’s own terms and privacy practices."
+              ]
+            },
+            {
+              "kind": "legal",
+              "id": "storage",
+              "title": "4. Local storage",
+              "paragraphs": [
+                "The website may use sessionStorage to preserve a form draft during the session and localStorage to remember the theme preference. This information stays on the user’s device until removed, the session ends or browser data is cleared."
+              ]
+            },
+            {
+              "kind": "legal",
+              "id": "analytics",
+              "title": "5. Analytics",
+              "paragraphs": [
+                "The delivered version contains no real identifiers for external analytics platforms. A technical event layer is available only for later configuration with any applicable consent."
+              ]
+            },
+            {
+              "kind": "legal",
+              "id": "rights",
+              "title": "6. User choices",
+              "paragraphs": [
+                "Before sending a message, the user may edit or remove any information in the summary. Local data may also be deleted through browser settings.",
+                "For questions about a message already sent, the user may contact Mimo Senior through the same WhatsApp channel."
+              ]
+            },
+            {
+              "kind": "legal",
+              "id": "changes",
+              "title": "7. Changes to this policy",
+              "paragraphs": [
+                "This policy may be updated when forms, analytics tools or support processes change. The latest update date appears at the top of this page."
+              ]
+            }
+          ],
+          "faqs": []
+        }
+      }
+    }
+  },
+  "forms": {
+    "es": {
+      "common": {
+        "required": "Este campo es obligatorio.",
+        "invalidEmail": "Introduce un correo válido o deja el campo vacío.",
+        "invalidPhone": "Introduce un número de WhatsApp válido.",
+        "next": "Continuar",
+        "back": "Anterior",
+        "send": "Enviar resumen por WhatsApp",
+        "copy": "Copiar resumen",
+        "copied": "Resumen copiado.",
+        "progress": "Paso {current} de {total}",
+        "privacy": "Acepto preparar este resumen para enviarlo por WhatsApp. No incluiré diagnósticos ni expedientes médicos.",
+        "summaryTitle": "Revisa tu resumen",
+        "edit": "Puedes regresar y editar cualquier respuesta antes de abrir WhatsApp.",
+        "unknownSizeHelp": "Mide cintura y cadera en centímetros y conserva ambas medidas. La tabla exacta se confirmará según la presentación disponible.",
+        "draftRestored": "Recuperamos el borrador guardado en esta sesión.",
+        "whatsappBlocked": "No fue posible abrir WhatsApp. Copia el resumen y pégalo manualmente."
+      },
+      "labels": {
+        "name": "Nombre",
+        "phone": "WhatsApp",
+        "email": "Correo opcional",
+        "relationship": "Relación con la persona",
+        "deliveryArea": "Zona de entrega",
+        "mobility": "Movilidad",
+        "diaperType": "Tipo de pañal",
+        "size": "Talla",
+        "unknownSize": "No conozco la talla",
+        "dailyUse": "Consumo aproximado por día",
+        "additionalProducts": "Productos adicionales",
+        "frequency": "Frecuencia",
+        "message": "Mensaje adicional",
+        "facilityName": "Nombre del centro",
+        "role": "Cargo",
+        "patients": "Número aproximado de pacientes",
+        "sizes": "Tallas utilizadas",
+        "monthlyUse": "Consumo mensual aproximado",
+        "products": "Productos requeridos",
+        "honeypot": "Deja este campo vacío"
+      },
+      "options": {
+        "relationship": [
+          "Familiar",
+          "Cuidador/a",
+          "Enfermero/a",
+          "Es para mí",
+          "Geriátrico o centro de cuidado",
+          "Otro"
+        ],
+        "mobility": [
+          "Camina sin ayuda",
+          "Camina con apoyo",
+          "Permanece sentada gran parte del día",
+          "Permanece en cama",
+          "Es para varios pacientes",
+          "Prefiero explicarlo"
+        ],
+        "diaperType": [
+          "No lo sé todavía",
+          "Con adhesivos",
+          "Tipo pants",
+          "Uso ambos formatos"
+        ],
+        "size": [
+          "No la conozco",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "Otra o varias tallas"
+        ],
+        "products": [
+          "Protectores de cama",
+          "Guantes",
+          "Toallitas húmedas",
+          "Productos de higiene y protección"
+        ],
+        "frequency": [
+          "Compra puntual",
+          "Semanal",
+          "Quincenal",
+          "Mensual",
+          "Estoy evaluando"
+        ]
+      },
+      "steps": [
+        "Datos básicos",
+        "Necesidad",
+        "Frecuencia y resumen"
+      ],
+      "institutionSteps": [
+        "Datos del centro",
+        "Consumo y productos",
+        "Frecuencia y resumen"
+      ],
+      "wizardSteps": [
+        "Para quién es",
+        "Movilidad",
+        "Necesidad actual",
+        "Tipo de pañal",
+        "Talla",
+        "Consumo",
+        "Zona de entrega",
+        "Contacto",
+        "Resumen"
+      ]
+    },
+    "en": {
+      "common": {
+        "required": "This field is required.",
+        "invalidEmail": "Enter a valid email or leave the field blank.",
+        "invalidPhone": "Enter a valid WhatsApp number.",
+        "next": "Continue",
+        "back": "Back",
+        "send": "Send summary through WhatsApp",
+        "copy": "Copy summary",
+        "copied": "Summary copied.",
+        "progress": "Step {current} of {total}",
+        "privacy": "I agree to prepare this summary for WhatsApp. I will not include diagnoses or medical records.",
+        "summaryTitle": "Review your summary",
+        "edit": "You can go back and edit any answer before opening WhatsApp.",
+        "unknownSizeHelp": "Measure waist and hips in centimetres and keep both values. The exact chart will be checked against the available product.",
+        "draftRestored": "We restored the draft saved in this session.",
+        "whatsappBlocked": "WhatsApp could not be opened. Copy the summary and paste it manually."
+      },
+      "labels": {
+        "name": "Name",
+        "phone": "WhatsApp",
+        "email": "Optional email",
+        "relationship": "Relationship to the person",
+        "deliveryArea": "Delivery area",
+        "mobility": "Mobility",
+        "diaperType": "Diaper type",
+        "size": "Size",
+        "unknownSize": "I do not know the size",
+        "dailyUse": "Approximate units per day",
+        "additionalProducts": "Additional products",
+        "frequency": "Frequency",
+        "message": "Additional message",
+        "facilityName": "Facility name",
+        "role": "Role",
+        "patients": "Approximate number of patients",
+        "sizes": "Sizes used",
+        "monthlyUse": "Approximate monthly usage",
+        "products": "Products required",
+        "honeypot": "Leave this field empty"
+      },
+      "options": {
+        "relationship": [
+          "Family member",
+          "Caregiver",
+          "Nurse",
+          "For myself",
+          "Care home or facility",
+          "Other"
+        ],
+        "mobility": [
+          "Walks independently",
+          "Walks with support",
+          "Sits for much of the day",
+          "Remains in bed",
+          "For several patients",
+          "I prefer to explain"
+        ],
+        "diaperType": [
+          "Not sure yet",
+          "Tab-style",
+          "Pull-up",
+          "Both formats"
+        ],
+        "size": [
+          "Unknown",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "Other or multiple sizes"
+        ],
+        "products": [
+          "Bed protectors",
+          "Gloves",
+          "Wet wipes",
+          "Hygiene and protection products"
+        ],
+        "frequency": [
+          "One-time purchase",
+          "Weekly",
+          "Every two weeks",
+          "Monthly",
+          "Still evaluating"
+        ]
+      },
+      "steps": [
+        "Basic details",
+        "Need",
+        "Frequency and summary"
+      ],
+      "institutionSteps": [
+        "Facility details",
+        "Usage and products",
+        "Frequency and summary"
+      ],
+      "wizardSteps": [
+        "Who it is for",
+        "Mobility",
+        "Current need",
+        "Diaper type",
+        "Size",
+        "Usage",
+        "Delivery area",
+        "Contact",
+        "Summary"
+      ]
+    }
+  },
+  "whatsappMessages": {
+    "es": {
+      "homeQuote": "Hola, visité el sitio web de Mimo Senior y deseo solicitar una cotización de productos para el cuidado de un adulto mayor.",
+      "chooseHelp": "Hola, necesito orientación para elegir el tipo y la talla adecuada de pañal para adulto.",
+      "monthlyPlan": "Hola, quiero organizar una compra mensual de insumos para el cuidado de un adulto mayor.",
+      "institutional": "Hola, necesito una cotización de productos para un geriátrico o centro de cuidado.",
+      "diapersPage": "Hola, encontré la página de pañales para adultos de Mimo Senior. Necesito ayuda para elegir y cotizar.",
+      "familyDiapers": "Hola, deseo cotizar pañales para un familiar.",
+      "bedCare": "Hola, busco productos para el cuidado de una persona que permanece en cama.",
+      "products": "Hola, deseo cotizar productos para el cuidado diario del adulto mayor.",
+      "contact": "Hola, visité el sitio web de Mimo Senior y deseo recibir orientación.",
+      "bottomWhatsapp": "Hola, deseo hablar con un asesor de Mimo Senior.",
+      "bottomQuote": "Hola, deseo preparar una cotización con Mimo Senior.",
+      "calculator": "Hola, calculé un consumo aproximado en el sitio de Mimo Senior y deseo solicitar una cotización.",
+      "formFamily": "Hola, completé el formulario familiar de Mimo Senior. Este es mi resumen:",
+      "formInstitution": "Hola, completé el formulario institucional de Mimo Senior. Este es mi resumen:",
+      "guideResult": "Hola, completé la guía para elegir pañal de Mimo Senior. Este es mi resumen:",
+      "productDiapers": "Hola, deseo cotizar pañales para adultos.",
+      "productTabs": "Hola, deseo cotizar pañales con adhesivos.",
+      "productPants": "Hola, deseo cotizar pañales tipo pants.",
+      "productUnderpads": "Hola, deseo cotizar protectores de cama.",
+      "productGloves": "Hola, deseo cotizar guantes.",
+      "productWipes": "Hola, deseo cotizar toallitas húmedas.",
+      "productHygiene": "Hola, deseo información sobre productos de higiene y protección."
+    },
+    "en": {
+      "homeQuote": "Hello, I visited the Mimo Senior website and would like a quote for senior care supplies.",
+      "chooseHelp": "Hello, I need guidance choosing the right adult diaper type and size.",
+      "monthlyPlan": "Hello, I would like to organise a monthly purchase of senior care supplies.",
+      "institutional": "Hello, I need a quotation for a care home or care facility.",
+      "diapersPage": "Hello, I found Mimo Senior’s adult diaper page and need help choosing and requesting a quote.",
+      "familyDiapers": "Hello, I would like to quote diapers for a family member.",
+      "bedCare": "Hello, I am looking for supplies for someone who remains in bed.",
+      "products": "Hello, I would like to quote everyday senior care products.",
+      "contact": "Hello, I visited the Mimo Senior website and would like guidance.",
+      "bottomWhatsapp": "Hello, I would like to speak with a Mimo Senior advisor.",
+      "bottomQuote": "Hello, I would like to prepare a quotation with Mimo Senior.",
+      "calculator": "Hello, I calculated estimated usage on the Mimo Senior website and would like a quote.",
+      "formFamily": "Hello, I completed Mimo Senior’s family form. Here is my summary:",
+      "formInstitution": "Hello, I completed Mimo Senior’s institutional form. Here is my summary:",
+      "guideResult": "Hello, I completed Mimo Senior’s diaper choosing guide. Here is my summary:",
+      "productDiapers": "Hello, I would like to quote adult diapers.",
+      "productTabs": "Hello, I would like to quote tab-style adult diapers.",
+      "productPants": "Hello, I would like to quote pull-up adult diapers.",
+      "productUnderpads": "Hello, I would like to quote bed protectors.",
+      "productGloves": "Hello, I would like to quote gloves.",
+      "productWipes": "Hello, I would like to quote wet wipes.",
+      "productHygiene": "Hello, I would like information about hygiene and protection products."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Mimo Senior",
+  "short_name": "Mimo Senior",
+  "description": "Pañales para adultos, protectores, guantes y otros insumos con orientación personalizada y cotización por WhatsApp en Panamá.",
+  "lang": "es",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcfaf6",
+  "theme_color": "#173f43",
+  "icons": [
+    {
+      "src": "/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
