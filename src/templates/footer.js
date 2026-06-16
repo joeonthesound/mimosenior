@@ -28,7 +28,16 @@ export function renderFooter(data, language) {
     </div>
   </div>
   <div class="container footer-bottom">
-    <p>© ${year} ${escapeHtml(data.business.name)}. ${escapeHtml(global.footerLegal)}</p>
-  </div>
+  <p>© ${year} ${escapeHtml(data.business.name)}. ${escapeHtml(global.footerLegal)}</p>
+
+  <p class="footer-credit">
+    <span>${escapeHtml(global.footerCredit)}</span>
+    <a
+      href="https://josuethacevedo.online"
+      target="_blank"
+      rel="noopener noreferrer"
+    >JoeCodex</a>
+  </p>
+</div>
 </footer>`;
 }

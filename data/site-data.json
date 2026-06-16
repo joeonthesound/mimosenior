@@ -246,6 +246,7 @@
         "finalCtaTitle": "Cuéntanos qué necesitas",
         "finalCtaText": "Podemos ayudarte a organizar una compra puntual, una cotización institucional o una planificación mensual.",
         "finalCtaButton": "Hablar por WhatsApp",
+        "footerCredit": "Sitio desarrollado por",
         "calculatorLabels": {
           "perDay": "Pañales por día",
           "patients": "Número de pacientes",
@@ -1244,6 +1245,7 @@
         "finalCtaTitle": "Tell us what you need",
         "finalCtaText": "We can help organise a one-time purchase, institutional quotation or flexible monthly plan.",
         "finalCtaButton": "Talk on WhatsApp",
+        "footerCredit": "Sitio desarrollado por",
         "calculatorLabels": {
           "perDay": "Diapers per day",
           "patients": "Number of patients",

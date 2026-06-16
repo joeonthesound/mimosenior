@@ -359,5 +359,27 @@ tbody td { color: var(--color-text-muted); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
-  /* Colores principales de la marca */
+  /* Footer URL a mi web */
+  .footer-bottom p {
+  margin-bottom: 0;
+}
+
+.footer-credit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .35rem;
+  margin-top: .65rem;
+}
+
+.footer-credit a {
+  color: var(--color-brand-800);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-credit a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
 
