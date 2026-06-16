@@ -113,11 +113,7 @@ p { margin-bottom: 1rem; }
 .site-header { position: sticky; z-index: 100; top: 0; height: var(--header-height); border-bottom: 1px solid color-mix(in srgb, var(--color-border) 75%, transparent); background: color-mix(in srgb, var(--color-background) 90%, transparent); backdrop-filter: blur(12px); }
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .brand { display: inline-flex; align-items: center; gap: .65rem; color: var(--color-brand-950); text-decoration: none; line-height: 1; }
-.brand-mark { width: 2.55rem; height: 2.55rem; display: grid; place-items: center; color: var(--color-accent); border-radius: 50%; background: var(--color-accent-soft); }
-.brand-mark svg { width: 1.8rem; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-.brand strong, .brand small { display: block; }
-.brand strong { font-size: 1.15rem; }
-.brand small { margin-top: .25rem; color: var(--color-text-muted); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; }
+.brand-logo { width: clamp(9.5rem, 18vw, 12rem); max-width: 100%; height: auto; max-height: 3rem; object-fit: contain; object-position: left center; }
 .header-actions { display: flex; align-items: center; gap: .35rem; }
 .language-link { min-height: 2.75rem; display: inline-flex; align-items: center; padding: .5rem .7rem; color: var(--color-text); font-size: .86rem; font-weight: 700; text-decoration: none; border-radius: .55rem; }
 .icon-button { width: 2.75rem; height: 2.75rem; display: inline-grid; place-items: center; padding: 0; color: var(--color-text); border: 1px solid var(--color-border); border-radius: .75rem; background: var(--color-surface); }
@@ -382,4 +378,27 @@ tbody td { color: var(--color-text-muted); }
   color: var(--color-accent-hover);
   text-decoration: underline;
 }
+.brand-logo-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
 
+.brand-logo-for-dark {
+  display: none;
+}
+
+html[data-theme="dark"] .brand-logo-for-light {
+  display: none;
+}
+
+html[data-theme="dark"] .brand-logo-for-dark {
+  display: block;
+}
+
+.footer-logo {
+  width: min(11rem, 100%);
+  height: auto;
+  max-height: 3rem;
+  object-fit: contain;
+  object-position: left center;
+}

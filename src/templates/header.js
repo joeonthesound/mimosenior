@@ -26,8 +26,23 @@ export function renderHeader(data, language, routeKey) {
 <header class="site-header" data-site-header>
   <div class="container header-inner">
     <a class="brand" href="${getRoute(data, 'home', language)}" aria-label="${escapeHtml(data.business.name)}">
-      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M22 38C12 31 6 25 6 17a9 9 0 0 1 16-5 9 9 0 0 1 16 5c0 8-6 14-16 21Z"/><path d="M22 12v18M13 21h18"/></svg></span>
-      <span><strong>Mimo</strong><small>Senior</small></span>
+      <img
+    class="brand-logo brand-logo-for-light"
+    src="/${escapeHtml(data.assets.images.logoLight)}"
+    width="360"
+    height="96"
+    alt="${escapeHtml(data.business.name)}"
+  >
+
+  <img
+    class="brand-logo brand-logo-for-dark"
+    src="/${escapeHtml(data.assets.images.logoDark)}"
+    width="360"
+    height="96"
+    alt=""
+    aria-hidden="true"
+  >  
+
     </a>
     <nav class="primary-nav" id="primary-navigation" aria-label="${escapeHtml(global.menu)}" data-navigation>
       <button class="nav-close icon-button" type="button" data-menu-close aria-label="${escapeHtml(global.closeMenu)}">${icon('close')}</button>
