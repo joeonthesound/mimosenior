@@ -1,20 +1,19 @@
 :root {
-  --color-brand-950: #102f32;
-  --color-brand-900: #173f43;
-  --color-brand-800: #1d5055;
-  --color-brand-700: #256267;
-  --color-brand-200: #cfe4e2;
-  --color-brand-100: #e8f2f1;
-  --color-brand-050: #f3f8f7;
-  --color-accent: #d96f52;
-  --color-accent-hover: #b9573f;
-  --color-accent-soft: #f8e5df;
-  --color-background: #fcfaf6;
-  --color-surface: #ffffff;
-  --color-surface-raised: #ffffff;
-  --color-text: #1d292d;
-  --color-text-muted: #5e6c70;
-  --color-border: #d8e0df;
+  --color-brand-950: #0c3345;
+  --color-brand-900: #124a62;
+  --color-brand-800: #1c6889;
+  --color-brand-700: #2d8cbe;
+
+  --color-accent: #59c749;
+  --color-accent-hover: #3fa833;
+  --color-accent-soft: #e6f6df;
+  --color-on-accent: #102a33;
+
+  --color-background: #fffdf1;
+  --color-surface: #f7f4e7;
+  --color-text: #172b33;
+  --color-text-muted: #53656c;
+  --color-border: #d9d8c8;
   --color-success: #2f735d;
   --color-warning: #8a5a10;
   --color-warning-bg: #fff5dd;
@@ -29,22 +28,21 @@
 }
 
 html[data-theme="dark"] {
-  --color-brand-950: #e9f5f3;
-  --color-brand-900: #b8ded9;
-  --color-brand-800: #91c8c2;
-  --color-brand-700: #7ab8b2;
-  --color-brand-200: #274e51;
-  --color-brand-100: #1d3a3d;
-  --color-brand-050: #162d30;
-  --color-accent: #ef9175;
-  --color-accent-hover: #f3a088;
-  --color-accent-soft: #4a2e29;
-  --color-background: #101a1c;
-  --color-surface: #172326;
-  --color-surface-raised: #1d2b2e;
-  --color-text: #eef4f3;
-  --color-text-muted: #b8c5c4;
-  --color-border: #334447;
+  --color-brand-950: #e5f6fc;
+  --color-brand-900: #b9e3f3;
+  --color-brand-800: #79c7e4;
+  --color-brand-700: #4aa8d1;
+
+  --color-accent: #59c749;
+  --color-accent-hover: #72d864;
+  --color-accent-soft: #1b452f;
+  --color-on-accent: #102a33;
+
+  --color-background: #0b2028;
+  --color-surface: #12313b;
+  --color-text: #fffdf1;
+  --color-text-muted: #c8d0c5;
+  --color-border: #31515b;
   --color-success: #8dd2b8;
   --color-warning: #f3c66d;
   --color-warning-bg: #3b301c;
