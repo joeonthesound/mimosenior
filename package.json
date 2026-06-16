@@ -6,9 +6,14 @@
   "description": "Bilingual, prerendered website for Mimo Senior using native Node.js, HTML, CSS and Vanilla JavaScript.",
   "scripts": {
     "build": "node build.mjs",
-    "serve": "python -m http.server 8080 -d dist"
+    "serve": "python -m http.server 8080 -d dist",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "wrangler": "^4.101.0"
   }
 }
