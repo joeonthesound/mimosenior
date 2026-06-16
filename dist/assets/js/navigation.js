@@ -52,7 +52,7 @@ export function initNavigation() {
     }
   });
   window.addEventListener('resize', () => {
-    if (window.matchMedia('(min-width: 55rem)').matches && nav.classList.contains('is-open')) {
+    if (window.matchMedia('(min-width: 80rem)').matches && nav.classList.contains('is-open')) {
       closeMenu({ restoreFocus: false });
     }
   });

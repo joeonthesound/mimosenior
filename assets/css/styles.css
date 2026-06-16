@@ -1,5 +1,45 @@
+/* ==========================================================================
+   MIMO SENIOR — HOJA DE ESTILOS PRINCIPAL
+   --------------------------------------------------------------------------
+   Organización:
+   01. Variables del tema claro
+   02. Variables del tema oscuro
+   03. Reset y estilos globales
+   04. Tipografía
+   05. Utilidades y contenedores
+   06. Header, logo y navegación
+   07. Botones
+   08. Breadcrumbs
+   09. Hero e imágenes
+   10. Secciones y tarjetas
+   11. Selector de necesidades
+   12. Secciones divididas y listas
+   13. Procesos y pasos
+   14. Bloques destacados y CTA final
+   15. Tablas, avisos y medición
+   16. Catálogo de productos
+   17. Formularios
+   18. Calculadora
+   19. Preguntas frecuentes
+   20. Contacto y contenido legal
+   21. Footer
+   22. Barra móvil de acciones
+   23. Responsive
+   24. Accesibilidad y movimiento reducido
+
+   IMPORTANTE:
+   - El diseño base es mobile-first.
+   - No edites la copia de este archivo dentro de /dist.
+   - Después de cada cambio ejecuta: node build.mjs
+   ========================================================================== */
+
+
+/* ==========================================================================
+   01. VARIABLES DEL TEMA CLARO
+   ========================================================================== */
+
 :root {
-  /* Colores principales de la marca */
+  /* Escala principal de azul de la marca */
   --color-brand-950: #0c3345;
   --color-brand-900: #124a62;
   --color-brand-800: #1c6889;
@@ -8,13 +48,13 @@
   --color-brand-100: #e1f0f5;
   --color-brand-050: #f2f8f6;
 
-  /* Verde Mantis */
+  /* Verde Mantis: botones y elementos destacados */
   --color-accent: #59c749;
   --color-accent-hover: #2f7f29;
   --color-accent-soft: #e6f6df;
   --color-on-accent: #102a33;
 
-  /* Neutros y estados */
+  /* Neutros, superficies y estados */
   --color-milk: #fffdf1;
   --color-background: var(--color-milk);
   --color-surface: #f7f4e7;
@@ -26,28 +66,48 @@
   --color-warning-bg: #fff5dd;
   --color-error: #a93636;
 
-  /* Fondos sólidos que siempre requieren texto Milk */
+  /* Fondos sólidos que siempre necesitan texto Milk */
   --color-solid-brand: #124a62;
   --color-on-solid-brand: var(--color-milk);
 
-  /* CTA final */
+  /* Colores específicos del CTA final */
   --color-final-cta-background: #124a62;
   --color-final-cta-text: var(--color-milk);
   --color-final-cta-text-muted: #e2e3d8;
   --color-final-cta-button-background: var(--color-milk);
   --color-final-cta-button-text: #124a62;
 
+  /* Sombras */
   --shadow-sm: 0 8px 24px rgba(16, 47, 50, .08);
   --shadow-md: 0 18px 48px rgba(16, 47, 50, .13);
+
+  /* Bordes redondeados */
   --radius-sm: .75rem;
   --radius-md: 1.25rem;
   --radius-lg: 2rem;
-  --container: 74rem;
+
+  /* Medidas globales */
+  --container: 90rem;
   --header-height: 4.75rem;
-  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Tipografía de sistema */
+  --font-sans:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
+
+/* ==========================================================================
+   02. VARIABLES DEL TEMA OSCURO
+   ========================================================================== */
+
 html[data-theme="dark"] {
+  /* La escala de marca se aclara para mantener contraste sobre fondo oscuro */
   --color-brand-950: #e5f6fc;
   --color-brand-900: #b9e3f3;
   --color-brand-800: #79c7e4;
@@ -56,137 +116,880 @@ html[data-theme="dark"] {
   --color-brand-100: #173945;
   --color-brand-050: #102b34;
 
+  /* Verde Mantis */
   --color-accent: #59c749;
   --color-accent-hover: #72d864;
   --color-accent-soft: #1b452f;
   --color-on-accent: #102a33;
 
+  /* Fondos y textos */
   --color-background: #0b2028;
   --color-surface: #12313b;
   --color-text: var(--color-milk);
   --color-text-muted: #c8d0c5;
   --color-border: #31515b;
+
+  /* Estados */
   --color-success: #8dd2b8;
   --color-warning: #f3c66d;
   --color-warning-bg: #3b301c;
   --color-error: #ff9f9f;
 
+  /* Elementos sólidos: permanecen oscuros en ambos temas */
   --color-solid-brand: #124a62;
   --color-on-solid-brand: var(--color-milk);
 
+  /* CTA final */
   --color-final-cta-background: #0c3345;
   --color-final-cta-text: var(--color-milk);
   --color-final-cta-text-muted: #d8ddd5;
   --color-final-cta-button-background: var(--color-milk);
   --color-final-cta-button-text: #0c3345;
 
+  /* Sombras del tema oscuro */
   --shadow-sm: 0 8px 24px rgba(0, 0, 0, .2);
   --shadow-md: 0 18px 48px rgba(0, 0, 0, .3);
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; background: var(--color-background); }
-body { margin: 0; min-width: 20rem; color: var(--color-text); background: var(--color-background); font-family: var(--font-sans); font-size: 1rem; line-height: 1.65; text-rendering: optimizeLegibility; }
-body.nav-open { overflow: hidden; }
-img { display: block; max-width: 100%; height: auto; }
-a { color: var(--color-brand-800); text-underline-offset: .18em; }
-a:hover { color: var(--color-accent-hover); }
-button, input, select, textarea { font: inherit; }
-button, a { -webkit-tap-highlight-color: transparent; }
-button { cursor: pointer; }
-:focus-visible { outline: .2rem solid var(--color-accent); outline-offset: .2rem; }
-[hidden] { display: none !important; }
 
-h1, h2, h3, p { margin-top: 0; }
-h1, h2, h3 { color: var(--color-brand-950); line-height: 1.14; letter-spacing: -.025em; text-wrap: balance; }
-h1 { margin-bottom: 1.25rem; font-size: clamp(2.35rem, 8vw, 4.8rem); }
-h2 { margin-bottom: 1rem; font-size: clamp(1.8rem, 5vw, 3rem); }
-h3 { margin-bottom: .65rem; font-size: clamp(1.15rem, 3vw, 1.45rem); }
-p { margin-bottom: 1rem; }
+/* ==========================================================================
+   03. RESET Y ESTILOS GLOBALES
+   ========================================================================== */
 
-.container { width: min(100% - 2rem, var(--container)); margin-inline: auto; }
-.narrow { width: min(100% - 2rem, 50rem); }
-.visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; border: 0 !important; }
-.skip-link { position: fixed; z-index: 1000; top: .5rem; left: .5rem; padding: .7rem 1rem; color: var(--color-milk); background: var(--color-brand-950); border-radius: .5rem; transform: translateY(-150%); }
-.skip-link:focus { transform: translateY(0); }
+* {
+  box-sizing: border-box;
+}
 
-.site-header { position: sticky; z-index: 100; top: 0; height: var(--header-height); border-bottom: 1px solid color-mix(in srgb, var(--color-border) 75%, transparent); background: color-mix(in srgb, var(--color-background) 90%, transparent); backdrop-filter: blur(12px); }
-.header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.brand { display: inline-flex; align-items: center; gap: .65rem; color: var(--color-brand-950); text-decoration: none; line-height: 1; }
-.brand-logo { width: clamp(9.5rem, 18vw, 12rem); max-width: 100%; height: auto; max-height: 3rem; object-fit: contain; object-position: left center; }
-.header-actions { display: flex; align-items: center; gap: .35rem; }
-.language-link { min-height: 2.75rem; display: inline-flex; align-items: center; padding: .5rem .7rem; color: var(--color-text); font-size: .86rem; font-weight: 700; text-decoration: none; border-radius: .55rem; }
-.icon-button { width: 2.75rem; height: 2.75rem; display: inline-grid; place-items: center; padding: 0; color: var(--color-text); border: 1px solid var(--color-border); border-radius: .75rem; background: var(--color-surface); }
-.icon-button svg, .mobile-action-bar svg { width: 1.35rem; height: 1.35rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+  background: var(--color-background);
+}
 
-.primary-nav { visibility: hidden; position: fixed; z-index: 110; inset: 0 0 0 auto; width: min(88vw, 24rem); padding: 1rem 1.25rem 2rem; background: var(--color-surface); box-shadow: var(--shadow-md); transform: translateX(105%); transition: transform .2s ease; overflow-y: auto; }
-.primary-nav.is-open { visibility: visible; transform: translateX(0); }
-.primary-nav ul { display: grid; gap: .15rem; margin: 2rem 0; padding: 0; list-style: none; }
-.primary-nav li a { min-height: 3rem; display: flex; align-items: center; padding: .6rem .8rem; color: var(--color-text); font-weight: 700; text-decoration: none; border-radius: .6rem; }
-.primary-nav li a:hover, .primary-nav li a[aria-current="page"] { color: var(--color-brand-950); background: var(--color-brand-100); }
-.nav-close { margin-left: auto; }
-.nav-quote { width: 100%; }
-.nav-backdrop { position: fixed; z-index: 105; inset: 0; background: rgba(9, 20, 22, .56); }
+body {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-x: clip;
+  color: var(--color-text);
+  background: var(--color-background);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+}
 
-.button { min-height: 2.9rem; display: inline-flex; align-items: center; justify-content: center; gap: .5rem; padding: .72rem 1.15rem; border: 1px solid transparent; border-radius: .8rem; font-weight: 800; line-height: 1.2; text-align: center; text-decoration: none; transition: background .16s ease, border-color .16s ease, transform .16s ease; }
-.button:hover { transform: translateY(-1px); }
-.button-primary { color: var(--color-on-accent); background: var(--color-accent); box-shadow: 0 .45rem 1.2rem color-mix(in srgb, var(--color-accent) 24%, transparent); }
-.button-primary:hover { color: var(--color-on-accent); background: var(--color-accent-hover); }
-.button-secondary { color: var(--color-brand-950); border-color: var(--color-brand-700); background: transparent; }
-.button-secondary:hover { color: var(--color-brand-950); background: var(--color-brand-100); }
-.button-light { color: var(--color-final-cta-button-text); background: var(--color-final-cta-button-background); }
-.button-light:hover { color: var(--color-final-cta-text); border-color: var(--color-final-cta-text); background: transparent; }
-.button-quiet { min-height: 2.5rem; padding: .5rem .75rem; color: var(--color-brand-950); border-color: var(--color-border); background: var(--color-surface); }
+/*
+ * Evita que una sección, un grid o un elemento flexible amplíe
+ * accidentalmente el ancho total de la página.
+ */
+main,
+header,
+footer,
+section {
+  max-width: 100%;
+}
 
-.breadcrumbs { padding-block: 1rem 0; }
-.breadcrumbs ol { display: flex; flex-wrap: wrap; gap: .35rem; margin: 0; padding: 0; list-style: none; color: var(--color-text-muted); font-size: .86rem; }
-.breadcrumbs li + li::before { content: '/'; margin-right: .35rem; }
-.breadcrumbs a { color: inherit; }
+body.nav-open {
+  overflow: hidden;
+}
 
-.hero { padding: clamp(2.2rem, 7vw, 6rem) 0 clamp(3rem, 8vw, 7rem); overflow: clip; }
-.hero-grid { display: grid; align-items: center; gap: 2rem; }
-.hero-copy { position: relative; z-index: 1; }
-.eyebrow { margin-bottom: .75rem; color: var(--color-accent-hover); font-size: .8rem; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
-.hero-lead { max-width: 43rem; margin-bottom: 1.5rem; color: var(--color-text-muted); font-size: clamp(1.08rem, 2.7vw, 1.35rem); }
-.hero-actions, .section-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
-.hero-trust { display: flex; flex-wrap: wrap; gap: .65rem 1.2rem; margin: 1.4rem 0 0; padding: 0; color: var(--color-text-muted); font-size: .88rem; list-style: none; }
-.hero-trust li::before { content: '✓'; margin-right: .35rem; color: var(--color-success); font-weight: 900; }
-.updated { color: var(--color-text-muted); font-size: .9rem; }
-.image-placeholder { position: relative; overflow: hidden; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: linear-gradient(135deg, var(--color-brand-100), var(--color-accent-soft)); box-shadow: var(--shadow-md); }
-.image-placeholder::after { content: ''; position: absolute; inset: 0; pointer-events: none; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--color-milk) 20%, transparent); border-radius: inherit; }
-.hero-media { aspect-ratio: 6 / 5; }
-.hero-media img, .split-media img { width: 100%; height: 100%; object-fit: cover; }
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
 
-.section { padding: clamp(3.5rem, 8vw, 7rem) 0; }
-.section-soft { background: var(--color-brand-050); border-block: 1px solid color-mix(in srgb, var(--color-border) 80%, transparent); }
-.compact-section { padding-block: 2rem; }
-.section-heading { max-width: 47rem; margin-bottom: 2rem; }
-.section-heading h2 { margin-bottom: .75rem; }
-.section-intro { color: var(--color-text-muted); font-size: 1.08rem; }
-.card-grid, .product-grid { display: grid; gap: 1rem; }
-.card, .product-card { position: relative; padding: 1.4rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); box-shadow: var(--shadow-sm); }
-.card-number { display: inline-block; margin-bottom: 1.4rem; color: var(--color-brand-800); font-size: .78rem; font-weight: 900; letter-spacing: .12em; }
-.card p, .product-card > p { color: var(--color-text-muted); }
-.card-link { display: inline-flex; gap: .4rem; align-items: center; font-weight: 800; text-decoration: none; }
+img {
+  display: block;
+  height: auto;
+}
 
-.need-grid { display: grid; gap: .8rem; }
-.need-card { min-height: 6rem; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: .9rem; padding: 1rem; color: var(--color-text); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); text-decoration: none; box-shadow: var(--shadow-sm); }
-.need-card:hover { color: var(--color-text); border-color: var(--color-brand-700); transform: translateY(-1px); }
-.need-card strong, .need-card small { display: block; }
-.need-card small { margin-top: .2rem; color: var(--color-text-muted); }
-.need-icon { width: 2.2rem; height: 2.2rem; display: grid; place-items: center; color: var(--color-success); border-radius: 50%; background: var(--color-brand-100); font-weight: 900; }
+a {
+  color: var(--color-brand-800);
+  text-underline-offset: .18em;
+}
 
-.split-grid { display: grid; gap: 2rem; align-items: center; }
-.split-media { aspect-ratio: 16 / 13; }
-.split-copy > p { color: var(--color-text-muted); font-size: 1.06rem; }
-.check-list { display: grid; gap: .7rem; margin: 1.25rem 0 1.5rem; padding: 0; list-style: none; }
-.check-list li { position: relative; padding-left: 1.8rem; }
-.check-list li::before { content: '✓'; position: absolute; left: 0; top: 0; color: var(--color-success); font-weight: 900; }
+a:hover {
+  color: var(--color-accent-hover);
+}
 
-.process-list { display: grid; gap: 1rem; margin: 0; padding: 0; list-style: none; }
-.process-list li { display: grid; grid-template-columns: auto 1fr; gap: 1rem; padding: 1.2rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
-.step-index { width: 2.4rem; height: 2.4rem; display: grid; place-items: center; color: var(--color-on-solid-brand); border-radius: 50%; background: var(--color-solid-brand); font-weight: 900; }
-.process-list p { margin-bottom: 0; color: var(--color-text-muted); }
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: .2rem solid var(--color-accent);
+  outline-offset: .2rem;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+
+/* ==========================================================================
+   04. TIPOGRAFÍA
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-brand-950);
+  line-height: 1.14;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+
+h1 {
+  margin-bottom: 1.25rem;
+  font-size: clamp(2.35rem, 8vw, 4.8rem);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+h3 {
+  margin-bottom: .65rem;
+  font-size: clamp(1.15rem, 3vw, 1.45rem);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+
+/* ==========================================================================
+   05. UTILIDADES Y CONTENEDORES
+   ========================================================================== */
+
+.container {
+  width: min(calc(100% - 2rem), var(--container));
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.narrow {
+  width: min(calc(100% - 2rem), 50rem);
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+/*
+ * min-width: 0 es esencial en hijos de Grid y Flex.
+ * Permite que textos, botones y tarjetas se contraigan sin crear
+ * desplazamiento horizontal en teléfonos y tabletas.
+ */
+.header-inner,
+.hero-grid > *,
+.split-grid > *,
+.card-grid > *,
+.product-grid > *,
+.need-grid > *,
+.process-list > *,
+.footer-grid > *,
+.contact-card > *,
+.highlight > *,
+.final-cta .container > *,
+.form-grid > *,
+.choice-grid > * {
+  min-width: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Enlace para saltar directamente al contenido con teclado */
+.skip-link {
+  position: fixed;
+  z-index: 1000;
+  top: .5rem;
+  left: .5rem;
+  padding: .7rem 1rem;
+  color: var(--color-milk);
+  background: var(--color-brand-950);
+  border-radius: .5rem;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+
+/* ==========================================================================
+   06. HEADER, LOGO Y NAVEGACIÓN
+   ========================================================================== */
+
+/* Cabecera sticky */
+.site-header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  height: var(--header-height);
+  border-bottom: 1px solid color-mix(
+    in srgb,
+    var(--color-border) 75%,
+    transparent
+  );
+  background: var(--color-background);
+
+  /*
+   * En móvil no se usa backdrop-filter.
+   * Ese efecto convierte el header en el bloque de referencia de los
+   * elementos position: fixed y hacía que el menú lateral quedara limitado
+   * a la altura del header.
+   */
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.header-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+}
+
+/* Enlace principal de la marca */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--color-brand-950);
+  text-decoration: none;
+  line-height: 1;
+}
+
+/* Contenedor de los dos logos: claro y oscuro */
+.brand-logo-wrapper {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Tamaño del logo en el header */
+.brand-logo {
+  display: block;
+  width: clamp(7.75rem, 11vw, 9.75rem);
+  max-width: 100%;
+  height: auto;
+  max-height: 3rem;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* En tema claro se usa el logo normal */
+.brand-logo-for-light {
+  display: block;
+}
+
+/* En tema claro se oculta el logo diseñado para fondos oscuros */
+.brand-logo-for-dark {
+  display: none;
+}
+
+/* Intercambio de logos en tema oscuro */
+html[data-theme="dark"] .brand-logo-for-light {
+  display: none;
+}
+
+html[data-theme="dark"] .brand-logo-for-dark {
+  display: block;
+}
+
+/* Acciones del header: idioma, tema y menú */
+.header-actions {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: .35rem;
+}
+
+.language-link {
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  padding: .5rem .7rem;
+  color: var(--color-text);
+  font-size: .86rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: .55rem;
+}
+
+.icon-button {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: .75rem;
+  background: var(--color-surface);
+}
+
+.icon-button svg,
+.mobile-action-bar svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Menú lateral móvil: estado cerrado */
+.primary-nav {
+  visibility: hidden;
+  position: fixed;
+  z-index: 130;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  width: min(88vw, 24rem);
+  max-width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
+  padding: 1rem 1.25rem 2rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  color: var(--color-text);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(105%);
+  transition:
+    transform .2s ease,
+    opacity .2s ease,
+    visibility 0s linear .2s;
+}
+
+/* Menú lateral móvil: estado abierto */
+.primary-nav.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+  transition:
+    transform .2s ease,
+    opacity .2s ease;
+}
+
+.primary-nav ul {
+  display: grid;
+  gap: .15rem;
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.primary-nav li a {
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: .6rem .8rem;
+  color: var(--color-text);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: .6rem;
+}
+
+.primary-nav li a:hover,
+.primary-nav li a[aria-current="page"] {
+  color: var(--color-brand-950);
+  background: var(--color-brand-100);
+}
+
+.nav-close {
+  margin-left: auto;
+}
+
+.nav-quote {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.nav-backdrop {
+  position: fixed;
+  z-index: 95;
+  inset: 0;
+  background: rgba(9, 20, 22, .56);
+}
+
+
+/* ==========================================================================
+   07. BOTONES
+   ========================================================================== */
+
+.button {
+  min-height: 2.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .72rem 1.15rem;
+  border: 1px solid transparent;
+  border-radius: .8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background .16s ease,
+    border-color .16s ease,
+    transform .16s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+/* Botón principal verde */
+.button-primary {
+  color: var(--color-on-accent);
+  background: var(--color-accent);
+  box-shadow: 0 .45rem 1.2rem color-mix(
+    in srgb,
+    var(--color-accent) 24%,
+    transparent
+  );
+}
+
+.button-primary:hover {
+  color: var(--color-on-accent);
+  background: var(--color-accent-hover);
+}
+
+/* Botón secundario transparente */
+.button-secondary {
+  color: var(--color-brand-950);
+  border-color: var(--color-brand-700);
+  background: transparent;
+}
+
+.button-secondary:hover {
+  color: var(--color-brand-950);
+  background: var(--color-brand-100);
+}
+
+/* Botón claro usado sobre fondos oscuros */
+.button-light {
+  color: var(--color-final-cta-button-text);
+  background: var(--color-final-cta-button-background);
+}
+
+.button-light:hover {
+  color: var(--color-final-cta-text);
+  border-color: var(--color-final-cta-text);
+  background: transparent;
+}
+
+/* Botón discreto para acciones secundarias */
+.button-quiet {
+  min-height: 2.5rem;
+  padding: .5rem .75rem;
+  color: var(--color-brand-950);
+  border-color: var(--color-border);
+  background: var(--color-surface);
+}
+
+
+/* ==========================================================================
+   08. BREADCRUMBS
+   ========================================================================== */
+
+.breadcrumbs {
+  padding-block: 1rem 0;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text-muted);
+  font-size: .86rem;
+  list-style: none;
+}
+
+.breadcrumbs li + li::before {
+  content: '/';
+  margin-right: .35rem;
+}
+
+.breadcrumbs a {
+  color: inherit;
+}
+
+
+/* ==========================================================================
+   09. HERO E IMÁGENES
+   ========================================================================== */
+
+.hero {
+  padding:
+    clamp(2.2rem, 7vw, 6rem)
+    0
+    clamp(3rem, 8vw, 7rem);
+  overflow: clip;
+}
+
+.hero-grid {
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  margin-bottom: .75rem;
+  color: var(--color-accent-hover);
+  font-size: .8rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.hero-lead {
+  max-width: 43rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-muted);
+  font-size: clamp(1.08rem, 2.7vw, 1.35rem);
+}
+
+.hero-actions,
+.section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem 1.2rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  color: var(--color-text-muted);
+  font-size: .88rem;
+  list-style: none;
+}
+
+.hero-trust li::before {
+  content: '✓';
+  margin-right: .35rem;
+  color: var(--color-success);
+  font-weight: 900;
+}
+
+.updated {
+  color: var(--color-text-muted);
+  font-size: .9rem;
+}
+
+/* Contenedor visual para imágenes reales o placeholders */
+.image-placeholder {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-100),
+    var(--color-accent-soft)
+  );
+  box-shadow: var(--shadow-md);
+}
+
+.image-placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px color-mix(
+    in srgb,
+    var(--color-milk) 20%,
+    transparent
+  );
+}
+
+.hero-media {
+  aspect-ratio: 6 / 5;
+}
+
+.hero-media img,
+.split-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ==========================================================================
+   10. SECCIONES Y TARJETAS
+   ========================================================================== */
+
+.section {
+  padding: clamp(3.5rem, 8vw, 7rem) 0;
+}
+
+.section-soft {
+  background: var(--color-brand-050);
+  border-block: 1px solid color-mix(
+    in srgb,
+    var(--color-border) 80%,
+    transparent
+  );
+}
+
+.compact-section {
+  padding-block: 2rem;
+}
+
+.section-heading {
+  max-width: 47rem;
+  margin-bottom: 2rem;
+}
+
+.section-heading h2 {
+  margin-bottom: .75rem;
+}
+
+.section-intro {
+  color: var(--color-text-muted);
+  font-size: 1.08rem;
+}
+
+.card-grid,
+.product-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card,
+.product-card {
+  position: relative;
+  padding: 1.4rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-number {
+  display: inline-block;
+  margin-bottom: 1.4rem;
+  color: var(--color-brand-800);
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.card p,
+.product-card > p {
+  color: var(--color-text-muted);
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+
+/* ==========================================================================
+   11. SELECTOR DE NECESIDADES
+   ========================================================================== */
+
+.need-grid {
+  display: grid;
+  gap: .8rem;
+}
+
+.need-card {
+  min-height: 6rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: .9rem;
+  padding: 1rem;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.need-card:hover {
+  color: var(--color-text);
+  border-color: var(--color-brand-700);
+  transform: translateY(-1px);
+}
+
+.need-card strong,
+.need-card small {
+  display: block;
+}
+
+.need-card small {
+  margin-top: .2rem;
+  color: var(--color-text-muted);
+}
+
+.need-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: grid;
+  place-items: center;
+  color: var(--color-success);
+  border-radius: 50%;
+  background: var(--color-brand-100);
+  font-weight: 900;
+}
+
+
+/* ==========================================================================
+   12. SECCIONES DIVIDIDAS Y LISTAS
+   ========================================================================== */
+
+.split-grid {
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+}
+
+.split-media {
+  aspect-ratio: 16 / 13;
+}
+
+.split-copy > p {
+  color: var(--color-text-muted);
+  font-size: 1.06rem;
+}
+
+.check-list {
+  display: grid;
+  gap: .7rem;
+  margin: 1.25rem 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+.check-list li::before {
+  content: '✓';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--color-success);
+  font-weight: 900;
+}
+
+
+/* ==========================================================================
+   13. PROCESOS Y PASOS
+   ========================================================================== */
+
+.process-list {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.process-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  padding: 1.2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.step-index {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  color: var(--color-on-solid-brand);
+  border-radius: 50%;
+  background: var(--color-solid-brand);
+  font-weight: 900;
+}
+
+.process-list p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+
+/* ==========================================================================
+   14. BLOQUES DESTACADOS Y CTA FINAL
+   ========================================================================== */
 
 .highlight,
 .final-cta .container {
@@ -224,142 +1027,573 @@ p { margin-bottom: 1rem; }
   background: transparent;
 }
 
-.final-cta { padding-top: 1.5rem; }
-
-.table-wrap { overflow-x: auto; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
-table { width: 100%; min-width: 44rem; border-collapse: collapse; }
-th, td { padding: 1rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--color-border); }
-thead th { color: var(--color-brand-950); background: var(--color-brand-100); }
-tbody th { width: 22%; color: var(--color-brand-950); }
-tbody td { color: var(--color-text-muted); }
-.table-note { margin-top: .8rem; color: var(--color-text-muted); font-size: .9rem; }
-
-.measurement-steps { display: grid; gap: .75rem; margin: 1.5rem 0; padding: 0; list-style: none; }
-.measurement-steps li { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: .8rem; }
-.measurement-steps span { width: 2rem; height: 2rem; display: grid; place-items: center; color: var(--color-on-solid-brand); border-radius: 50%; background: var(--color-solid-brand); font-weight: 800; }
-.notice { padding: 1.25rem; border: 1px solid var(--color-brand-200); border-left: .35rem solid var(--color-brand-700); border-radius: var(--radius-sm); background: var(--color-brand-100); }
-.notice h2 { font-size: 1.35rem; }
-.notice p:last-child { margin-bottom: 0; }
-.notice.warning { color: var(--color-warning); border-color: color-mix(in srgb, var(--color-warning) 42%, var(--color-border)); border-left-color: var(--color-warning); background: var(--color-warning-bg); }
-.inline-notice { margin: .85rem 0 1rem; padding: 1rem; color: var(--color-text); border-left: .3rem solid var(--color-brand-700); border-radius: .5rem; background: var(--color-brand-100); }
-
-.product-grid { grid-template-columns: 1fr; }
-.product-card { display: flex; flex-direction: column; }
-.product-card dl { margin: .5rem 0 1.25rem; }
-.product-card dl div { padding-block: .7rem; border-top: 1px solid var(--color-border); }
-.product-card dt { color: var(--color-brand-950); font-size: .8rem; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; }
-.product-card dd { margin: .2rem 0 0; color: var(--color-text-muted); }
-.product-card .availability { margin-top: auto; color: var(--color-success); font-size: .86rem; font-weight: 800; }
-.product-card .button { align-self: flex-start; }
-
-.form-container { max-width: 58rem; }
-.progressive-form, .calculator { padding: clamp(1rem, 4vw, 2rem); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); box-shadow: var(--shadow-sm); }
-.form-progress { height: .5rem; margin-bottom: .8rem; overflow: hidden; border-radius: 999px; background: var(--color-brand-100); }
-.form-progress span { display: block; width: 0; height: 100%; border-radius: inherit; background: var(--color-accent); transition: width .2s ease; }
-.progress-text { margin-bottom: .45rem; color: var(--color-text-muted); font-size: .9rem; font-weight: 800; }
-.step-labels { display: none; }
-.form-status { min-height: 1.5rem; margin-bottom: .4rem; color: var(--color-success); font-weight: 700; }
-.form-step { min-width: 0; margin: 0; padding: 0; border: 0; }
-.form-step > legend { width: 100%; margin-bottom: 1.5rem; color: var(--color-brand-950); font-size: 1.55rem; font-weight: 900; }
-.form-grid { display: grid; gap: 1rem; }
-.form-field { min-width: 0; }
-.form-field label, .choice-group legend { display: block; margin-bottom: .4rem; color: var(--color-brand-950); font-weight: 800; }
-.form-field input, .form-field select, .form-field textarea { width: 100%; min-height: 3rem; padding: .72rem .8rem; color: var(--color-text); border: 1px solid var(--color-border); border-radius: .65rem; background: var(--color-background); }
-.form-field textarea { resize: vertical; }
-.form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color: var(--color-brand-700); box-shadow: 0 0 0 .18rem color-mix(in srgb, var(--color-brand-700) 18%, transparent); outline: none; }
-.form-field [aria-invalid="true"] { border-color: var(--color-error); }
-.field-error { min-height: 1.1rem; margin: .25rem 0 0; color: var(--color-error); font-size: .82rem; }
-.choice-group { margin: 1.2rem 0 0; padding: 0; border: 0; }
-.choice-grid { display: grid; gap: .65rem; }
-.choice, .consent { display: flex; align-items: flex-start; gap: .7rem; padding: .75rem; border: 1px solid var(--color-border); border-radius: .65rem; background: var(--color-background); }
-.choice input, .consent input { width: 1.2rem; height: 1.2rem; margin-top: .15rem; accent-color: var(--color-accent); }
-.conditional-fields { margin-top: 1.2rem; padding: 1rem; border-radius: var(--radius-sm); background: var(--color-brand-050); }
-.form-actions { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; margin-top: 1.5rem; }
-.summary-box { margin-top: 1.2rem; padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-brand-050); }
-.summary-box pre { max-height: 19rem; overflow: auto; padding: 1rem; white-space: pre-wrap; word-break: break-word; color: var(--color-text); border-radius: .55rem; background: var(--color-surface); font: inherit; font-size: .9rem; }
-.honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
-
-.calculator .button-secondary { margin-top: 1rem; }
-.calculator-results { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; margin: 1.3rem 0 1rem; }
-.calculator-results div { padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-brand-050); }
-.calculator-results span, .calculator-results strong { display: block; }
-.calculator-results span { color: var(--color-text-muted); font-size: .8rem; }
-.calculator-results strong { margin-top: .35rem; color: var(--color-brand-950); font-size: 1.6rem; }
-.calculator-note { color: var(--color-text-muted); font-size: .88rem; }
-
-.faq-list { display: grid; gap: .7rem; }
-.faq-list details { border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface); }
-.faq-list summary { min-height: 3.4rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .9rem 1rem; color: var(--color-brand-950); font-weight: 850; cursor: pointer; list-style: none; }
-.faq-list summary::-webkit-details-marker { display: none; }
-.faq-list summary::after { content: '+'; font-size: 1.45rem; font-weight: 500; }
-.faq-list details[open] summary::after { content: '−'; }
-.faq-list details > div { padding: 0 1rem 1rem; color: var(--color-text-muted); }
-.faq-list details p:last-child { margin-bottom: 0; }
-.faq-groups { display: grid; gap: 2.3rem; }
-
-.contact-card { display: grid; gap: 1rem; align-items: center; padding: 1.5rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); box-shadow: var(--shadow-sm); }
-.contact-card strong { display: block; color: var(--color-brand-950); font-size: 1.25rem; }
-.legal-layout { max-width: 52rem; padding-block: 1rem 5rem; }
-.legal-section { padding: 1.5rem 0; border-bottom: 1px solid var(--color-border); }
-.legal-section h2 { font-size: 1.5rem; }
-.legal-section p { color: var(--color-text-muted); }
-
-.site-footer { margin-top: 4rem; padding: 3.5rem 0 6.5rem; color: var(--color-text-muted); border-top: 1px solid var(--color-border); background: var(--color-brand-050); }
-.footer-grid { display: grid; gap: 2.5rem; }
-.brand-footer { margin-bottom: 1rem; }
-.site-footer h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .1em; }
-.footer-links { display: grid; gap: .5rem; margin: 0; padding: 0; list-style: none; }
-.footer-links a, .footer-whatsapp { color: var(--color-text-muted); }
-.footer-bottom { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid var(--color-border); font-size: .86rem; }
-.mobile-action-bar { position: fixed; z-index: 90; right: .75rem; bottom: .65rem; left: .75rem; display: grid; grid-template-columns: 1fr 1fr; gap: .55rem; padding: .5rem; border: 1px solid var(--color-border); border-radius: 1rem; background: color-mix(in srgb, var(--color-surface) 94%, transparent); box-shadow: var(--shadow-md); backdrop-filter: blur(12px); }
-.mobile-action-bar a { min-height: 3rem; display: flex; align-items: center; justify-content: center; gap: .45rem; padding: .6rem; color: var(--color-brand-950); border-radius: .7rem; font-weight: 850; text-decoration: none; }
-.mobile-action-bar a:last-child { color: var(--color-on-accent); background: var(--color-accent); }
-
-@media (min-width: 38rem) {
-  .card-grid, .product-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .need-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .form-grid.two-columns { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .form-grid.three-columns { grid-template-columns: repeat(3, minmax(0,1fr)); }
-  .full-width { grid-column: 1 / -1; }
-  .choice-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .contact-card, .highlight, .final-cta .container { grid-template-columns: minmax(0,1fr) auto; }
-  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+.final-cta {
+  padding-top: 1.5rem;
 }
 
-@media (min-width: 55rem) {
-  .menu-toggle, .nav-close, .nav-backdrop { display: none !important; }
-  .primary-nav { visibility: visible; position: static; width: auto; display: flex; align-items: center; gap: .55rem; margin-left: auto; padding: 0; overflow: visible; background: transparent; box-shadow: none; transform: none; }
-  .primary-nav ul { display: flex; align-items: center; gap: .05rem; margin: 0; }
-  .primary-nav li a { min-height: 2.6rem; padding: .5rem .52rem; font-size: .78rem; }
-  .nav-quote { width: auto; margin-left: .35rem; }
-  .hero-grid { grid-template-columns: minmax(0,1.05fr) minmax(22rem,.95fr); gap: clamp(2rem,5vw,5rem); }
-  .split-grid { grid-template-columns: minmax(20rem,.9fr) minmax(0,1.1fr); gap: clamp(2rem,6vw,5rem); }
-  .card-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
-  .need-grid { grid-template-columns: repeat(5, minmax(0,1fr)); }
-  .need-card { min-height: 11rem; grid-template-columns: 1fr auto; align-content: space-between; }
-  .need-card .need-icon { grid-column: 1 / -1; }
-  .process-list { grid-template-columns: repeat(4, minmax(0,1fr)); }
-  .process-list li { grid-template-columns: 1fr; }
-  .product-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
-  .step-labels { display: grid; grid-template-columns: repeat(var(--step-count,3), minmax(0,1fr)); gap: .4rem; margin: 0 0 1.5rem; padding: 0; color: var(--color-text-muted); font-size: .75rem; list-style: none; }
-  .step-labels li { padding-top: .45rem; border-top: .2rem solid var(--color-border); }
-  .step-labels li.is-current { color: var(--color-brand-950); border-color: var(--color-accent); font-weight: 850; }
-  .mobile-action-bar { display: none; }
-  .site-footer { padding-bottom: 3.5rem; }
+.highlight .button,
+.final-cta .button {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
-@media (min-width: 70rem) {
-  .primary-nav li a { padding-inline: .7rem; font-size: .84rem; }
+
+/* ==========================================================================
+   15. TABLAS, AVISOS Y MEDICIÓN
+   ========================================================================== */
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+table {
+  width: 100%;
+  min-width: 44rem;
+  border-collapse: collapse;
 }
-  /* Footer URL a mi web */
-  .footer-bottom p {
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--color-border);
+}
+
+thead th {
+  color: var(--color-brand-950);
+  background: var(--color-brand-100);
+}
+
+tbody th {
+  width: 22%;
+  color: var(--color-brand-950);
+}
+
+tbody td {
+  color: var(--color-text-muted);
+}
+
+.table-note {
+  margin-top: .8rem;
+  color: var(--color-text-muted);
+  font-size: .9rem;
+}
+
+.measurement-steps {
+  display: grid;
+  gap: .75rem;
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.measurement-steps li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: .8rem;
+}
+
+.measurement-steps span {
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  color: var(--color-on-solid-brand);
+  border-radius: 50%;
+  background: var(--color-solid-brand);
+  font-weight: 800;
+}
+
+.notice {
+  padding: 1.25rem;
+  border: 1px solid var(--color-brand-200);
+  border-left: .35rem solid var(--color-brand-700);
+  border-radius: var(--radius-sm);
+  background: var(--color-brand-100);
+}
+
+.notice h2 {
+  font-size: 1.35rem;
+}
+
+.notice p:last-child {
   margin-bottom: 0;
 }
 
+.notice.warning {
+  color: var(--color-warning);
+  border-color: color-mix(
+    in srgb,
+    var(--color-warning) 42%,
+    var(--color-border)
+  );
+  border-left-color: var(--color-warning);
+  background: var(--color-warning-bg);
+}
+
+.inline-notice {
+  margin: .85rem 0 1rem;
+  padding: 1rem;
+  color: var(--color-text);
+  border-left: .3rem solid var(--color-brand-700);
+  border-radius: .5rem;
+  background: var(--color-brand-100);
+}
+
+
+/* ==========================================================================
+   16. CATÁLOGO DE PRODUCTOS
+   ========================================================================== */
+
+.product-grid {
+  grid-template-columns: 1fr;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card dl {
+  margin: .5rem 0 1.25rem;
+}
+
+.product-card dl div {
+  padding-block: .7rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.product-card dt {
+  color: var(--color-brand-950);
+  font-size: .8rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.product-card dd {
+  margin: .2rem 0 0;
+  color: var(--color-text-muted);
+}
+
+.product-card .availability {
+  margin-top: auto;
+  color: var(--color-success);
+  font-size: .86rem;
+  font-weight: 800;
+}
+
+.product-card .button {
+  align-self: flex-start;
+}
+
+
+/* ==========================================================================
+   17. FORMULARIOS
+   ========================================================================== */
+
+.form-container {
+  max-width: 58rem;
+}
+
+.progressive-form,
+.calculator {
+  padding: clamp(1rem, 4vw, 2rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-progress {
+  height: .5rem;
+  margin-bottom: .8rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--color-brand-100);
+}
+
+.form-progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--color-accent);
+  transition: width .2s ease;
+}
+
+.progress-text {
+  margin-bottom: .45rem;
+  color: var(--color-text-muted);
+  font-size: .9rem;
+  font-weight: 800;
+}
+
+.step-labels {
+  display: none;
+}
+
+.form-status {
+  min-height: 1.5rem;
+  margin-bottom: .4rem;
+  color: var(--color-success);
+  font-weight: 700;
+}
+
+.form-step {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-step > legend {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  color: var(--color-brand-950);
+  font-size: 1.55rem;
+  font-weight: 900;
+}
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-field {
+  min-width: 0;
+}
+
+.form-field label,
+.choice-group legend {
+  display: block;
+  margin-bottom: .4rem;
+  color: var(--color-brand-950);
+  font-weight: 800;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  min-height: 3rem;
+  padding: .72rem .8rem;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: .65rem;
+  background: var(--color-background);
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--color-brand-700);
+  outline: none;
+  box-shadow: 0 0 0 .18rem color-mix(
+    in srgb,
+    var(--color-brand-700) 18%,
+    transparent
+  );
+}
+
+.form-field [aria-invalid="true"] {
+  border-color: var(--color-error);
+}
+
+.field-error {
+  min-height: 1.1rem;
+  margin: .25rem 0 0;
+  color: var(--color-error);
+  font-size: .82rem;
+}
+
+.choice-group {
+  margin: 1.2rem 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.choice-grid {
+  display: grid;
+  gap: .65rem;
+}
+
+.choice,
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: .7rem;
+  padding: .75rem;
+  border: 1px solid var(--color-border);
+  border-radius: .65rem;
+  background: var(--color-background);
+}
+
+.choice input,
+.consent input {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: .15rem;
+  accent-color: var(--color-accent);
+}
+
+.conditional-fields {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-brand-050);
+}
+
+.form-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+  margin-top: 1.5rem;
+}
+
+.summary-box {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-brand-050);
+}
+
+.summary-box pre {
+  max-height: 19rem;
+  overflow: auto;
+  padding: 1rem;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border-radius: .55rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font: inherit;
+  font-size: .9rem;
+}
+
+/* Campo trampa para reducir spam básico */
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
+/* ==========================================================================
+   18. CALCULADORA
+   ========================================================================== */
+
+.calculator .button-secondary {
+  margin-top: 1rem;
+}
+
+.calculator-results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .75rem;
+  margin: 1.3rem 0 1rem;
+}
+
+.calculator-results div {
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-brand-050);
+}
+
+.calculator-results span,
+.calculator-results strong {
+  display: block;
+}
+
+.calculator-results span {
+  color: var(--color-text-muted);
+  font-size: .8rem;
+}
+
+.calculator-results strong {
+  margin-top: .35rem;
+  color: var(--color-brand-950);
+  font-size: 1.6rem;
+}
+
+.calculator-note {
+  color: var(--color-text-muted);
+  font-size: .88rem;
+}
+
+
+/* ==========================================================================
+   19. PREGUNTAS FRECUENTES
+   ========================================================================== */
+
+.faq-list {
+  display: grid;
+  gap: .7rem;
+}
+
+.faq-list details {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.faq-list summary {
+  min-height: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .9rem 1rem;
+  color: var(--color-brand-950);
+  font-weight: 850;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: '+';
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.faq-list details[open] summary::after {
+  content: '−';
+}
+
+.faq-list details > div {
+  padding: 0 1rem 1rem;
+  color: var(--color-text-muted);
+}
+
+.faq-list details p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-groups {
+  display: grid;
+  gap: 2.3rem;
+}
+
+
+/* ==========================================================================
+   20. CONTACTO Y CONTENIDO LEGAL
+   ========================================================================== */
+
+.contact-card {
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-card strong {
+  display: block;
+  color: var(--color-brand-950);
+  font-size: 1.25rem;
+}
+
+.legal-layout {
+  max-width: 52rem;
+  padding-block: 1rem 5rem;
+}
+
+.legal-section {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.legal-section h2 {
+  font-size: 1.5rem;
+}
+
+.legal-section p {
+  color: var(--color-text-muted);
+}
+
+
+/* ==========================================================================
+   21. FOOTER
+   ========================================================================== */
+
+.site-footer {
+  margin-top: 4rem;
+  padding: 3.5rem 0 6.5rem;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-brand-050);
+}
+
+.footer-grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.brand-footer {
+  margin-bottom: 1rem;
+}
+
+/* Tamaño del logo dentro del footer */
+.footer-logo {
+  width: min(11rem, 100%);
+  height: auto;
+  max-height: 3rem;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.site-footer h2 {
+  font-size: 1rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  display: grid;
+  gap: .5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links a,
+.footer-whatsapp {
+  color: var(--color-text-muted);
+}
+
+.footer-bottom {
+  margin-top: 2.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--color-border);
+  font-size: .86rem;
+}
+
+.footer-bottom p {
+  margin-bottom: 0;
+}
+
+/* Crédito y enlace del desarrollador */
 .footer-credit {
   display: flex;
   flex-wrap: wrap;
@@ -378,27 +1612,353 @@ tbody td { color: var(--color-text-muted); }
   color: var(--color-accent-hover);
   text-decoration: underline;
 }
-.brand-logo-wrapper {
-  display: inline-flex;
+
+
+/* ==========================================================================
+   22. BARRA MÓVIL DE ACCIONES
+   ========================================================================== */
+
+/*
+ * La barra queda limitada al ancho real del viewport.
+ * minmax(0, 1fr) evita que el contenido de un botón agrande su columna
+ * y empuje el segundo botón fuera de la pantalla.
+ */
+.mobile-action-bar {
+  position: fixed;
+  z-index: 90;
+  right: .75rem;
+  bottom: max(.65rem, env(safe-area-inset-bottom));
+  left: .75rem;
+  width: auto;
+  max-width: calc(100vw - 1.5rem);
+  max-width: calc(100dvw - 1.5rem);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .55rem;
+  padding: .5rem;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  background: color-mix(
+    in srgb,
+    var(--color-surface) 94%,
+    transparent
+  );
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(12px);
+}
+
+.mobile-action-bar a {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 3rem;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  padding: .6rem .45rem;
+  overflow: hidden;
+  color: var(--color-brand-950);
+  border-radius: .7rem;
+  font-size: clamp(.78rem, 3.6vw, 1rem);
+  font-weight: 850;
+  line-height: 1.15;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.brand-logo-for-dark {
-  display: none;
+.mobile-action-bar a span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-html[data-theme="dark"] .brand-logo-for-light {
-  display: none;
+.mobile-action-bar a svg {
+  flex: 0 0 auto;
 }
 
-html[data-theme="dark"] .brand-logo-for-dark {
-  display: block;
+.mobile-action-bar a:last-child {
+  color: var(--color-on-accent);
+  background: var(--color-accent);
 }
 
-.footer-logo {
-  width: min(11rem, 100%);
-  height: auto;
-  max-height: 3rem;
-  object-fit: contain;
-  object-position: left center;
+/* Ajuste adicional para teléfonos muy estrechos */
+@media (max-width: 22rem) {
+  .mobile-action-bar {
+    right: .5rem;
+    left: .5rem;
+    max-width: calc(100vw - 1rem);
+    max-width: calc(100dvw - 1rem);
+    gap: .4rem;
+    padding: .4rem;
+  }
+
+  .mobile-action-bar a {
+    gap: .3rem;
+    padding-inline: .35rem;
+    font-size: .78rem;
+  }
+
+  .mobile-action-bar svg {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+}
+
+
+/* ==========================================================================
+   23. RESPONSIVE
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   23.1. Teléfonos grandes y tabletas pequeñas: desde 608 px
+   Conserva composiciones sencillas para evitar diseños demasiado densos.
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 38rem) {
+  .card-grid,
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .need-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-grid.two-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  .choice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   23.2. Tabletas: desde 768 px
+   El footer puede organizarse en columnas, pero las secciones principales
+   continúan con una estructura de tableta.
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 48rem) {
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+
+  .process-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   23.3. Tabletas grandes: desde 880 px
+   Oculta la barra inferior móvil, pero todavía no activa las composiciones
+   amplias de escritorio. Esto evita que iPad en vertical use grids forzados.
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 55rem) {
+  .mobile-action-bar {
+    display: none;
+  }
+
+  .site-footer {
+    padding-bottom: 3.5rem;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   23.4. Contenido de escritorio: desde 1120 px
+   Las composiciones amplias se activan solo cuando existe ancho real.
+   Un iPad Pro de 1024 px en vertical permanece en diseño de tableta.
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 70rem) {
+  .hero-grid {
+    grid-template-columns:
+      minmax(0, 1.05fr)
+      minmax(22rem, .95fr);
+    gap: clamp(2rem, 5vw, 5rem);
+  }
+
+  .split-grid {
+    grid-template-columns:
+      minmax(20rem, .9fr)
+      minmax(0, 1.1fr);
+    gap: clamp(2rem, 6vw, 5rem);
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .need-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .need-card {
+    min-height: 11rem;
+    grid-template-columns: 1fr auto;
+    align-content: space-between;
+  }
+
+  .need-card .need-icon {
+    grid-column: 1 / -1;
+  }
+
+  .process-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .process-list li {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .form-grid.three-columns {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .contact-card,
+  .highlight,
+  .final-cta .container {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .step-labels {
+    display: grid;
+    grid-template-columns:
+      repeat(var(--step-count, 3), minmax(0, 1fr));
+    gap: .4rem;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    color: var(--color-text-muted);
+    font-size: .75rem;
+    list-style: none;
+  }
+
+  .step-labels li {
+    min-width: 0;
+    padding-top: .45rem;
+    overflow-wrap: anywhere;
+    border-top: .2rem solid var(--color-border);
+  }
+
+  .step-labels li.is-current {
+    color: var(--color-brand-950);
+    border-color: var(--color-accent);
+    font-weight: 850;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   23.5. Navegación horizontal: desde 1280 px
+   Evita comprimir o partir las etiquetas del menú.
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 80rem) {
+  .site-header {
+    background: color-mix(
+      in srgb,
+      var(--color-background) 90%,
+      transparent
+    );
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+
+  .menu-toggle,
+  .nav-close,
+  .nav-backdrop {
+    display: none !important;
+  }
+
+  .primary-nav {
+    visibility: visible;
+    position: static;
+    width: auto;
+    max-width: none;
+    height: auto;
+    max-height: none;
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    margin-left: auto;
+    padding: 0;
+    overflow: visible;
+    color: inherit;
+    background: transparent;
+    box-shadow: none;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+    transition: none;
+  }
+
+  .primary-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+  }
+
+  .primary-nav li a {
+    min-height: 2.6rem;
+    padding: .5rem .48rem;
+    font-size: .76rem;
+    white-space: nowrap;
+  }
+
+  .nav-quote {
+    width: auto;
+    margin-left: .35rem;
+    padding-inline: .9rem;
+    white-space: nowrap;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   23.6. Escritorios grandes: desde 1472 px
+   Da más aire a la navegación.
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 92rem) {
+  .primary-nav li a {
+    padding-inline: .68rem;
+    font-size: .84rem;
+  }
+
+  .nav-quote {
+    padding-inline: 1.15rem;
+  }
+}
+
+
+/* ==========================================================================
+   24. ACCESIBILIDAD Y MOVIMIENTO REDUCIDO
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
